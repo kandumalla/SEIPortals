@@ -1,0 +1,94 @@
+*** Settings ***
+Resource  ../Resources/Page Objects/EmployeePortalPageObjects/Login.robot
+Resource  ../Resources/Page Objects/EmployeePortalPageObjects/Home.Robot
+Resource  ../Resources/Page Objects/EmployeePortalPageObjects/AdvancedSearch.robot
+Resource  ../Resources/Page Objects/EmployeePortalPageObjects/AutomatedAuditReview.robot
+Resource  ../Resources/Page Objects/EmployeePortalPageObjects/BillingSpecialistReview.Robot
+Resource  ../Resources/Page Objects/EmployeePortalPageObjects/CreateInvoice.Robot
+Resource  ../Resources/Page Objects/EmployeePortalPageObjects/DisputesReview.Robot
+Resource  ../Resources/Page Objects/EmployeePortalPageObjects/FSRQuoteReview.Robot
+Resource  ../Resources/Page Objects/EmployeePortalPageObjects/PMBulkUpload.robot
+Resource  ../Resources/Page Objects/EmployeePortalPageObjects/Report.robot
+Resource  ../Resources/Page Objects/EmployeePortalPageObjects/ReviewByAccountTeam.robot
+Resource  ../Resources/Page Objects/EmployeePortalPageObjects/ReviewByAp.robot
+Resource  ../Resources/Page Objects/EmployeePortalPageObjects/ReviewByFSR.robot
+Resource  ../Resources/Page Objects/EmployeePortalPageObjects/SideMenu.Robot
+Resource  ../Resources/Page Objects/EmployeePortalPageObjects/VisualAudit.robot
+Resource  ../Resources/Page Objects/EmployeePortalPageObjects/InvoiceDetail.robot
+Resource  ../Resources/Page Objects/EmployeePortalPageObjects/RequestDetail.robot
+Resource  ../Resources/Page Objects/EmployeePortalPageObjects/QuoteDetail.robot
+Resource  ../Resources/Page Objects/EmployeePortalPageObjects/BucketSearchCriteria.Robot
+
+
+
+
+
+
+
+
+*** Variables ***
+
+*** Keywords ***
+Login With Valid Credentials
+    Login.Send User Name Valid
+    Login.Send Password Valid
+Login attemp With Invalid Username
+    Login.Send User Name Invalid
+    Login.Send Password Valid
+Login attempt with Invalid Passwod
+    Login.Send User Name Valid
+    Login.Send Password Invalid
+Login attempt with invalid username and password
+   Login.Send User Name Invalid
+   Login.Send Password Invalid
+Login attempt with blank Username
+    Login.Send Blank Username
+    Login.Send Password Valid
+Login attempt with blank Password
+    Login.Send User Name Valid
+    Login.Send Blank Password
+
+Login attempt with blank Username and Password
+    Login.Send Blank Username
+    Login.Send Blank Password
+Login error message check
+    Login.Check login error message presence
+    Login.Check login error message text
+Submit Login
+    Login.click login button
+    #dismiss alert
+Login
+    Login.Send User Name Valid
+    Login.Send Password Valid
+    Login.click login button
+    #dismiss alert
+
+
+Check Login Success
+   Home.On Home Page Check
+
+Enter Quick Search Tracking Number
+    Home.Search by Tracking Number
+Enter Quick Search SR Number
+    Home.Search by SR Number
+Enter Quick Search Quote Number
+    Home.Search by Quote Number
+Enter Quick Search Location Number
+    Home.Search by Location
+Enter Quick Search VIID
+    Home.Search by VIID
+
+Quick Search Tracking Number Check
+    Home.Search by Tracking Number Check
+Quick SR Number Check
+    Home.search by sr number check
+Quick Search Quote Number Check
+    Home.search by quote number check
+Quick Search Location Number Check
+    Home.search by location number check
+Quick Search VIID Number Check
+    Home.search by viid check
+Navigate to Disputes
+    SideMenu.Navigate to Disputes Page
+Navigate to Ready To Bill
+    SideMenu.Navigate to Ready To Bill Page
