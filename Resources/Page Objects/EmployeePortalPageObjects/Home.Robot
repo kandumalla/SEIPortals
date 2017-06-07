@@ -12,8 +12,8 @@ ${SearchbyQuote#Field} =  xpath=//input[@placeholder='Quote number']
 ${SearchByQuoteSearchButton} =  xpath=//button[@ng-click="vm.goToQuoteDetails();"]
 ${SearchByLocationField} =  xpath=//input[@placeholder='Location number']
 ${SearchByLocationFieldSearchButton} =  xpath=//button[@ng-click="vm.goToLocationDetails();"]
-${SearchByVIID/InvoiceID} =  xpath=//input[@placeholder='Vendor number']
-${SearchByVIID/InvoiceIDSearchButton} =  xpath= xpath=//button[@ng-click="vm.goToInvoiceDetails();"]
+${SearchByVIID/InvoiceID} =  xpath= //input[@placeholder='Vendor number']
+${SearchByVIID/InvoiceIDSearchButton} =   xpath=//button[@ng-click="vm.goToInvoiceDetails();"]
 
 #Data Variables
 ${TrackingNumber} =  74943328
@@ -49,7 +49,7 @@ Search by Location
     input text  ${searchbylocationfield}  ${locationnumber}
     click element  ${searchbylocationfieldsearchbutton}
 Search by VIID
-
+    wait until page contains element  ${searchbyviid/invoiceid}  10
     input text  ${searchbyviid/invoiceid}    ${viid}
     click element  ${searchbyviid/invoiceidsearchbutton}
 Search by Invoice ID
@@ -73,7 +73,7 @@ Search by Location Number Check
     wait until page contains  ${locationnumber}  10
 
 Search by VIID Check
-    wait until element contains  ${viid}  10
+    wait until page contains  ${viid}  10
 
 Search by Invoice ID Check
     wait until page contains  #${invoiceid}  10

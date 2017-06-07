@@ -29,9 +29,13 @@ Resource  ../Resources/Page Objects/EmployeePortalPageObjects/BucketSearchCriter
 *** Variables ***
 
 *** Keywords ***
-Login With Valid Credentials
+Login With Valid Employee Credentials
     Login.Send User Name Valid
     Login.Send Password Valid
+Login With Valid Client Credentials
+    Login.Send User Name Client
+    Login.Send Password Client
+
 Login attemp With Invalid Username
     Login.Send User Name Invalid
     Login.Send Password Valid
@@ -76,11 +80,12 @@ Enter Quick Search Quote Number
 Enter Quick Search Location Number
     Home.Search by Location
 Enter Quick Search VIID
+
     Home.Search by VIID
 
 Quick Search Tracking Number Check
     Home.Search by Tracking Number Check
-Quick SR Number Check
+Quick Search SR Number Check
     Home.search by sr number check
 Quick Search Quote Number Check
     Home.search by quote number check
@@ -88,6 +93,7 @@ Quick Search Location Number Check
     Home.search by location number check
 Quick Search VIID Number Check
     Home.search by viid check
+
 Navigate to Disputes
     SideMenu.Navigate to Disputes Page
 Navigate to Ready To Bill

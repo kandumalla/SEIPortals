@@ -9,7 +9,7 @@ ${FogotPasswordLink}=    xpath= //*/div[2]/div/div/section/div/div[2]/div/a
 ${LoginErrorAlert}=  xpath= //*/div[1]/div/div[2]/div/div/section/div/div[2]/div/div/div[2]
 #Data Variables
 ${ValidUsername}=   dmohamed
-${ValidPassword}=   Trevola60
+${ValidPassword}=   Trevola1960
 ${InvalidUsername}=     InvalidUser
 ${InvalidPassword}=     InvalidPassword
 
@@ -20,7 +20,11 @@ Send User Name Valid
 
 Send User Name Invalid
     input text   ${UserNameField}    ${InvalidUsername}
+Send User Name Client
+    input text  ${UserNameField}    OSMITH
 
+Send Password Client
+    input text  ${PasswordField}     test
 
 Send Password Valid
     input text  ${PasswordField}  ${ValidPassword}

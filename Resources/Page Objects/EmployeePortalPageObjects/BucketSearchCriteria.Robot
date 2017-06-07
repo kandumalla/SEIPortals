@@ -20,8 +20,8 @@ ${DFMRejectedDropDown} =   xpath = //select[@ng-model='vm.bucket.bucketSearchSpe
 ${JobNumberField}=  xpath = //input[@placeholder='jobNumber']
 ${POnumber}=    xpath = //input[@placeholder='poNumber']
 ${ProjectStatusSelection}=  xpath = //option[@value='Project Forum']
-${AuditRuleDropDown}=   xpath = //select[@ng-model='vm.bucket.bucketSearchSpec.auditRulePassOrFail']
-
+${AuditRuleDropDown} =   xpath = //select[@ng-model='vm.bucket.bucketSearchSpec.auditRulePassOrFail']
+${ProcessButton} =  xpath = (//*[@title='Process this invoice'])[1]
 #DataVariables
 ${ReadyToBillVIID} =   487932161
 ${ReadyToBillSRNumber} =  1-1953030794
@@ -48,3 +48,5 @@ Submit Search
 Check for Search Results
     element should be visible  ${InvoiceSearchResultsList}   'Search Returned No Records'
 
+Process Invoice
+    click element  ${processbutton}

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generated="20170605 11:04:08.499" generator="Robot 3.0.1 (Python 2.7.13 on win32)">
-<suite source="C:\development\robot-scripts\VixxoPortals\Tests\EmployeePortalTests.Robot" id="s1" name="EmployeePortalTests">
-<test id="s1-t1" name="User should be able to execute Tracking Number Quick Search">
+<robot generated="20170606 23:54:59.092" generator="Robot 3.0.1 (Python 2.7.13 on win32)">
+<suite source="C:\development\robot-scripts\VixxoPortals\Tests\ClientPortalTests.Robot" id="s1" name="ClientPortalTests">
+<test id="s1-t1" name="User should be able to create RFS">
 <kw type="setup" name="Begin Employee Portal TEst" library="Common">
 <kw name="Open Browser" library="Selenium2Library">
 <doc>Opens a new browser instance to given URL.</doc>
@@ -9,123 +9,143 @@
 <arg>about:blank</arg>
 <arg>chrome</arg>
 </arguments>
-<msg timestamp="20170605 11:04:08.656" level="INFO">Opening browser 'chrome' to base url 'about:blank'</msg>
-<status status="PASS" endtime="20170605 11:04:12.300" starttime="20170605 11:04:08.656"></status>
+<msg timestamp="20170606 23:54:59.300" level="INFO">Opening browser 'chrome' to base url 'about:blank'</msg>
+<status status="PASS" endtime="20170606 23:55:03.196" starttime="20170606 23:54:59.300"></status>
 </kw>
 <kw name="Set Selenium Implicit Wait" library="Selenium2Library">
 <doc>Sets Selenium 2's default implicit wait in seconds and</doc>
 <arguments>
 <arg>20</arg>
 </arguments>
-<status status="PASS" endtime="20170605 11:04:12.303" starttime="20170605 11:04:12.301"></status>
+<status status="PASS" endtime="20170606 23:55:03.199" starttime="20170606 23:55:03.196"></status>
 </kw>
 <kw name="Go To" library="Selenium2Library">
 <doc>Navigates the active browser instance to the provided URL.</doc>
 <arguments>
 <arg>http://employeportalweb-dev.us-east-1.elasticbeanstalk.com/</arg>
 </arguments>
-<msg timestamp="20170605 11:04:12.303" level="INFO">Opening url 'http://employeportalweb-dev.us-east-1.elasticbeanstalk.com/'</msg>
-<status status="PASS" endtime="20170605 11:04:14.333" starttime="20170605 11:04:12.303"></status>
+<msg timestamp="20170606 23:55:03.199" level="INFO">Opening url 'http://employeportalweb-dev.us-east-1.elasticbeanstalk.com/'</msg>
+<status status="PASS" endtime="20170606 23:55:07.604" starttime="20170606 23:55:03.199"></status>
 </kw>
-<status status="PASS" endtime="20170605 11:04:14.333" starttime="20170605 11:04:08.656"></status>
+<status status="PASS" endtime="20170606 23:55:07.604" starttime="20170606 23:54:59.300"></status>
 </kw>
-<kw name="Login" library="EmployeePortalApp">
-<kw name="Send User Name Valid" library="Login">
+<kw name="Login With Valid Client Credentials" library="EmployeePortalApp">
+<kw name="Send User Name Client" library="Login">
 <kw name="Input Text" library="Selenium2Library">
 <doc>Types the given `text` into text field identified by `locator`.</doc>
 <arguments>
 <arg>${UserNameField}</arg>
-<arg>${ValidUsername}</arg>
+<arg>OSMITH</arg>
 </arguments>
-<msg timestamp="20170605 11:04:14.335" level="INFO">Typing text 'dmohamed' into text field 'id=username'</msg>
-<status status="PASS" endtime="20170605 11:04:14.867" starttime="20170605 11:04:14.335"></status>
+<msg timestamp="20170606 23:55:07.606" level="INFO">Typing text 'OSMITH' into text field 'id=username'</msg>
+<status status="PASS" endtime="20170606 23:55:08.070" starttime="20170606 23:55:07.606"></status>
 </kw>
-<status status="PASS" endtime="20170605 11:04:14.867" starttime="20170605 11:04:14.335"></status>
+<status status="PASS" endtime="20170606 23:55:08.070" starttime="20170606 23:55:07.606"></status>
 </kw>
-<kw name="Send Password Valid" library="Login">
+<kw name="Send Password Client" library="Login">
 <kw name="Input Text" library="Selenium2Library">
 <doc>Types the given `text` into text field identified by `locator`.</doc>
 <arguments>
 <arg>${PasswordField}</arg>
-<arg>${ValidPassword}</arg>
+<arg>test</arg>
 </arguments>
-<msg timestamp="20170605 11:04:14.868" level="INFO">Typing text 'Trevola60' into text field 'id=password'</msg>
-<status status="PASS" endtime="20170605 11:04:14.969" starttime="20170605 11:04:14.868"></status>
+<msg timestamp="20170606 23:55:08.072" level="INFO">Typing text 'test' into text field 'id=password'</msg>
+<status status="PASS" endtime="20170606 23:55:08.344" starttime="20170606 23:55:08.071"></status>
 </kw>
-<status status="PASS" endtime="20170605 11:04:14.969" starttime="20170605 11:04:14.867"></status>
+<status status="PASS" endtime="20170606 23:55:08.344" starttime="20170606 23:55:08.071"></status>
 </kw>
+<status status="PASS" endtime="20170606 23:55:08.344" starttime="20170606 23:55:07.605"></status>
+</kw>
+<kw name="Submit Login" library="EmployeePortalApp">
 <kw name="Click Login Button" library="Login">
 <kw name="Click Button" library="Selenium2Library">
 <doc>Clicks a button identified by `locator`.</doc>
 <arguments>
 <arg>${LoginBtn}</arg>
 </arguments>
-<msg timestamp="20170605 11:04:14.970" level="INFO">Clicking button 'id=Onsubmit'.</msg>
-<status status="PASS" endtime="20170605 11:04:15.049" starttime="20170605 11:04:14.969"></status>
+<msg timestamp="20170606 23:55:08.346" level="INFO">Clicking button 'id=Onsubmit'.</msg>
+<status status="PASS" endtime="20170606 23:55:08.420" starttime="20170606 23:55:08.346"></status>
 </kw>
-<status status="PASS" endtime="20170605 11:04:15.049" starttime="20170605 11:04:14.969"></status>
+<status status="PASS" endtime="20170606 23:55:08.420" starttime="20170606 23:55:08.346"></status>
 </kw>
-<status status="PASS" endtime="20170605 11:04:15.049" starttime="20170605 11:04:14.334"></status>
+<status status="PASS" endtime="20170606 23:55:08.420" starttime="20170606 23:55:08.345"></status>
 </kw>
-<kw name="Enter Quick Search Tracking Number" library="EmployeePortalApp">
-<kw name="Search by Tracking Number" library="Home">
-<kw name="Wait Until Page Contains Element" library="Selenium2Library">
-<doc>Waits until element specified with `locator` appears on current page.</doc>
+<kw name="Navigate to RFS Create Page" library="ClientPortalApp">
+<kw name="Click RFS Create Link" library="SideMenu">
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by `locator`.</doc>
 <arguments>
-<arg>${searchbytracking/sr#field}</arg>
-<arg>10</arg>
+<arg>${RFSCreatelink}</arg>
 </arguments>
-<status status="PASS" endtime="20170605 11:04:16.269" starttime="20170605 11:04:15.050"></status>
+<msg timestamp="20170606 23:55:08.422" level="INFO">Clicking element 'xpath = //a[@title='RFS Create']'.</msg>
+<status status="PASS" endtime="20170606 23:55:09.443" starttime="20170606 23:55:08.422"></status>
 </kw>
+<status status="PASS" endtime="20170606 23:55:09.443" starttime="20170606 23:55:08.421"></status>
+</kw>
+<kw name="Enter Location Number" library="RFSCreate">
 <kw name="Input Text" library="Selenium2Library">
 <doc>Types the given `text` into text field identified by `locator`.</doc>
 <arguments>
-<arg>${searchbytracking/sr#field}</arg>
-<arg>${trackingnumber}</arg>
+<arg>${LocationSearchField}</arg>
+<arg>${LocationNumber}</arg>
 </arguments>
-<msg timestamp="20170605 11:04:16.271" level="INFO">Typing text '74943328' into text field 'xpath=//input[@placeholder='Tracking number']'</msg>
-<status status="PASS" endtime="20170605 11:04:16.520" starttime="20170605 11:04:16.270"></status>
+<msg timestamp="20170606 23:55:09.444" level="INFO">Typing text '34222' into text field 'xpath = //input[@placeholder='Location Number']'</msg>
+<status status="PASS" endtime="20170606 23:55:09.684" starttime="20170606 23:55:09.444"></status>
+</kw>
+<status status="PASS" endtime="20170606 23:55:09.685" starttime="20170606 23:55:09.443"></status>
+</kw>
+<kw name="Click Search Button" library="RFSCreate">
+<kw name="Click Button" library="Selenium2Library">
+<doc>Clicks a button identified by `locator`.</doc>
+<arguments>
+<arg>${LocationSearchbtn}</arg>
+</arguments>
+<msg timestamp="20170606 23:55:09.686" level="INFO">Clicking button 'xpath = //button[@class='btn btn-primary btn-search']'.</msg>
+<status status="PASS" endtime="20170606 23:55:09.763" starttime="20170606 23:55:09.686"></status>
+</kw>
+<status status="PASS" endtime="20170606 23:55:09.763" starttime="20170606 23:55:09.685"></status>
+</kw>
+<kw name="Click Create New RFS Button" library="RFSCreate">
+<kw name="Wait Until Element Is Visible" library="Selenium2Library">
+<doc>Waits until element specified with `locator` is visible.</doc>
+<arguments>
+<arg>${CreateNewRFSbtn}</arg>
+<arg>10</arg>
+</arguments>
+<status status="PASS" endtime="20170606 23:55:10.506" starttime="20170606 23:55:09.765"></status>
 </kw>
 <kw name="Click Element" library="Selenium2Library">
 <doc>Click element identified by `locator`.</doc>
 <arguments>
-<arg>${searchbytracking/srsearchbutton}</arg>
+<arg>${CreateNewRFSbtn}</arg>
 </arguments>
-<msg timestamp="20170605 11:04:16.520" level="INFO">Clicking element 'xpath= //button[@ng-click="vm.goToSRDetails();"]'.</msg>
-<status status="PASS" endtime="20170605 11:04:16.595" starttime="20170605 11:04:16.520"></status>
+<msg timestamp="20170606 23:55:10.507" level="INFO">Clicking element 'xpath = //*[@ng-click='vm.addRFS(locationAddressInfo)']'.</msg>
+<status status="PASS" endtime="20170606 23:55:10.563" starttime="20170606 23:55:10.506"></status>
 </kw>
-<status status="PASS" endtime="20170605 11:04:16.595" starttime="20170605 11:04:15.050"></status>
+<status status="PASS" endtime="20170606 23:55:10.563" starttime="20170606 23:55:09.764"></status>
 </kw>
-<status status="PASS" endtime="20170605 11:04:16.595" starttime="20170605 11:04:15.050"></status>
+<status status="PASS" endtime="20170606 23:55:10.563" starttime="20170606 23:55:08.421"></status>
 </kw>
-<kw name="Quick Search Tracking Number Check" library="EmployeePortalApp">
-<kw name="Search by Tracking Number Check" library="Home">
-<kw name="Wait Until Page Contains" library="Selenium2Library">
-<doc>Waits until `text` appears on current page.</doc>
+<kw name="Choose Problem Area" library="ClientPortalApp">
+<kw name="Select Problem Area" library="RFSCreate">
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by `locator`.</doc>
 <arguments>
-<arg>${trackingnumber}</arg>
-<arg>10</arg>
+<arg>${ProblemAreaSelection}</arg>
 </arguments>
-<status status="PASS" endtime="20170605 11:04:17.275" starttime="20170605 11:04:16.597"></status>
+<msg timestamp="20170606 23:55:10.566" level="INFO">Clicking element 'xpath = (//*[@id="inputType"]/option[13])[1]'.</msg>
+<status status="PASS" endtime="20170606 23:55:11.074" starttime="20170606 23:55:10.566"></status>
 </kw>
-<status status="PASS" endtime="20170605 11:04:17.275" starttime="20170605 11:04:16.596"></status>
+<status status="PASS" endtime="20170606 23:55:11.074" starttime="20170606 23:55:10.565"></status>
 </kw>
-<status status="PASS" endtime="20170605 11:04:17.275" starttime="20170605 11:04:16.596"></status>
-</kw>
-<kw type="teardown" name="End Web Test" library="Common">
-<kw name="Close Browser" library="Selenium2Library">
-<doc>Closes the current browser.</doc>
-<status status="PASS" endtime="20170605 11:04:20.351" starttime="20170605 11:04:17.277"></status>
-</kw>
-<status status="PASS" endtime="20170605 11:04:20.351" starttime="20170605 11:04:17.276"></status>
+<status status="PASS" endtime="20170606 23:55:11.074" starttime="20170606 23:55:10.565"></status>
 </kw>
 <tags>
-<tag>debug</tag>
 <tag>Smoke</tag>
 </tags>
-<status status="PASS" endtime="20170605 11:04:20.351" critical="yes" starttime="20170605 11:04:08.656"></status>
+<status status="PASS" endtime="20170606 23:55:11.074" critical="yes" starttime="20170606 23:54:59.299"></status>
 </test>
-<status status="PASS" endtime="20170605 11:04:20.374" starttime="20170605 11:04:08.501"></status>
+<status status="PASS" endtime="20170606 23:55:11.078" starttime="20170606 23:54:59.094"></status>
 </suite>
 <statistics>
 <total>
@@ -133,16 +153,15 @@
 <stat fail="0" pass="1">All Tests</stat>
 </total>
 <tag>
-<stat fail="0" pass="1">debug</stat>
 <stat fail="0" pass="1">Smoke</stat>
 </tag>
 <suite>
-<stat fail="0" id="s1" name="EmployeePortalTests" pass="1">EmployeePortalTests</stat>
+<stat fail="0" id="s1" name="ClientPortalTests" pass="1">ClientPortalTests</stat>
 </suite>
 </statistics>
 <errors>
-<msg timestamp="20170605 11:04:08.646" level="WARN">Imported resource file 'C:\development\robot-scripts\VixxoPortals\Resources\Page Objects\EmployeePortalPageObjects\InvoiceDetail.robot' is empty.</msg>
-<msg timestamp="20170605 11:04:08.646" level="WARN">Imported resource file 'C:\development\robot-scripts\VixxoPortals\Resources\Page Objects\EmployeePortalPageObjects\RequestDetail.robot' is empty.</msg>
-<msg timestamp="20170605 11:04:08.646" level="WARN">Imported resource file 'C:\development\robot-scripts\VixxoPortals\Resources\Page Objects\EmployeePortalPageObjects\QuoteDetail.robot' is empty.</msg>
+<msg timestamp="20170606 23:54:59.276" level="WARN">Imported resource file 'C:\development\robot-scripts\VixxoPortals\Resources\Page Objects\EmployeePortalPageObjects\InvoiceDetail.robot' is empty.</msg>
+<msg timestamp="20170606 23:54:59.277" level="WARN">Imported resource file 'C:\development\robot-scripts\VixxoPortals\Resources\Page Objects\EmployeePortalPageObjects\RequestDetail.robot' is empty.</msg>
+<msg timestamp="20170606 23:54:59.279" level="WARN">Imported resource file 'C:\development\robot-scripts\VixxoPortals\Resources\Page Objects\EmployeePortalPageObjects\QuoteDetail.robot' is empty.</msg>
 </errors>
 </robot>
