@@ -13,6 +13,7 @@ Navigate to RFS Create Page
     Click Search Button
     Click Create New RFS Button
 Enter RFS Details
+      Input Submitter Name
       Select Problem Area from drop down
       Select Problem Type from drop down
       Select Problem Description from drop down
@@ -28,4 +29,7 @@ Enter Problem Description
     Input Problem Description Text
 Submit RFS
     Click Submit New RFS
+Check RFS Create Success
+    Assert RFS Was Created
+    Get Tracking Number
 

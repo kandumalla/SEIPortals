@@ -98,3 +98,36 @@ Navigate to Disputes
     SideMenu.Navigate to Disputes Page
 Navigate to Ready To Bill
     SideMenu.Navigate to Ready To Bill Page
+
+
+Navigate to invoice create page
+    Click Create Invoice Link
+    Input Tracking Number for Invoice
+    Click Invoice Search Button
+    Click Create New Invoice Button
+
+Input invoice details
+    Input SP Invoice Number
+    Input GL Code
+    Select GL Code
+    Open Date Select Celandar
+    Select Todays Date
+    Input Work Description
+    Select GL Routing Code
+
+Add Labor Line Item
+    click add button
+    select labor line item
+    select technician labor
+    input sp quantity
+    click save
+
+Upload Invoice Attachment
+    Upload Attachment
+
+Submit Invoice
+    Click Save Invoice
+    Click Submit Invoice
+Check for invoice success
+    Check invoice success alert
+

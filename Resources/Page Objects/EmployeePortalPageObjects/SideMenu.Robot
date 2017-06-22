@@ -34,7 +34,7 @@ Navigate To RQM Page
 
 Naviagte To Paid Only Pending Page
     click element  ${paidonlypendinglink}
-Navigate to Create Invoice Page
+Click Create Invoice Link
     click element   ${createinvoicelink}
 
 Navigate to Visual Audit Page

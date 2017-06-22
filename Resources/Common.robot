@@ -12,6 +12,7 @@ Begin SWM Test
 Begin Employee Portal TEst
     open browser   about:blank    chrome
     set selenium implicit wait    20
+
     #maximize browser window
     go to  http://employeportalweb-dev.us-east-1.elasticbeanstalk.com/
 

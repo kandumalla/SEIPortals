@@ -16,5 +16,7 @@ User should be able to create RFS
     Login With Valid Client Credentials
     Submit Login
     Navigate to RFS Create Page
-    Choose Problem Area
+    Enter RFS Details
+    Submit RFS
+    Check RFS Create Success
 

@@ -6,7 +6,7 @@ Resource  ../Resources/ClientPortalApp.Robot
 
 Test Setup   Common.Begin Employee Portal Test
 
-Test Teardown  Common.End Web Test
+#Test Teardown  Common.End Web Test
 *** Variables ***
 
 *** Test Cases ***
@@ -45,7 +45,16 @@ User should be able to execute Location Quick Search
      Enter Quick Search Location Number
      Quick Search Location Number Check
 
+User should be able to create an invoice
 
+    [Tags]  Smoke   Invoice
+    Login
+    Navigate to invoice create page
+    Input invoice details
+    Add Labor Line Item
+    Upload Attachment
+    Submit Invoice
+    Check for invoice success
 
 
 #Disputes
