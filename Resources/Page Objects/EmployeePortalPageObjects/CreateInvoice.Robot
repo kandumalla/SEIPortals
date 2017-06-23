@@ -33,7 +33,8 @@ ${SubmitInvoiceButton} =  xpath= //button[@class='btn btn-primary pull-left']
 ${AttachmentFile} =  C:/Users/dmohamed/Documents/Testing Environment/Testing Screenshots/Invoice Work Flow.PNG
 
 ${AttachmentElement} =  xpath= //span[@ng-if='attachmentReference.isStaged']
-${InvoiceCreateSuccessfulalert} =  xpath= //*[text]
+${InvoiceCreateSuccessfulalert} =  id=toast-container
+${InvoiceCreateSuccessfullMessage} =  xpath = //*[text()='The invoice submitted successfully'
 ${SubmitInvoiceW/warnings} =   xpath= //*[text()='Submit w/ Warnings']
 #DataVariable
 ${TrackingNumberInvoice} =   93095528
@@ -101,9 +102,7 @@ Click Submit Invoice
 Check invoice success alert
   wait until page contains element  ${invoicecreatesuccessfulalert}    10
   element should be visible  ${invoicecreatesuccessfulalert}
-  wait until page contains   The invoice submitted successfully   10
-
-  element should contain    ${invoicecreatesuccessfulalert}        The invoice submitted successfully
+  wait until page contains  ${invoicecreatesuccessfullmessage}  10
 
 
 
