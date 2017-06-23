@@ -114,6 +114,38 @@ Input invoice details
     Select Todays Date
     Input Work Description
     Select GL Routing Code
+Input invoice details w/o invoice number
+    #Input SP Invoice Number
+    Input GL Code
+    Select GL Code
+    Open Date Select Celandar
+    Select Todays Date
+    Input Work Description
+    Select GL Routing Code
+
+Input invoice details w/o GL Code
+    Input SP Invoice Number
+    Clear GL Code
+    Open Date Select Celandar
+    Select Todays Date
+    Input Work Description
+    Select GL Routing Code
+Input invoice details w/o Date Selected
+    Input SP Invoice Number
+    Input GL Code
+    Select GL Code
+#    Open Date Select Celandar
+#    Select Todays Date
+    Input Work Description
+    Select GL Routing Code
+Input invoice details w/o GL Routing Code
+    Input SP Invoice Number
+    Input GL Code
+    Select GL Code
+    Open Date Select Celandar
+    Select Todays Date
+    Input Work Description
+#    Select GL Routing Code
 
 Add Labor Line Item
     click add button

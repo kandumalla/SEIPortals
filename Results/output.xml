@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generated="20170622 14:49:49.513" generator="Robot 3.0.1 (Python 2.7.13 on win32)">
+<robot generated="20170623 12:28:00.365" generator="Robot 3.0.1 (Python 2.7.13 on win32)">
 <suite source="C:\development\robot-scripts\VixxoPortals\Tests\EmployeePortalTests.Robot" id="s1" name="EmployeePortalTests">
 <test id="s1-t1" name="User should be able to create an invoice">
 <kw type="setup" name="Begin Employee Portal TEst" library="Common">
@@ -9,25 +9,25 @@
 <arg>about:blank</arg>
 <arg>chrome</arg>
 </arguments>
-<msg timestamp="20170622 14:49:49.703" level="INFO">Opening browser 'chrome' to base url 'about:blank'</msg>
-<status status="PASS" endtime="20170622 14:49:53.236" starttime="20170622 14:49:49.703"></status>
+<msg timestamp="20170623 12:28:00.557" level="INFO">Opening browser 'chrome' to base url 'about:blank'</msg>
+<status status="PASS" endtime="20170623 12:28:04.516" starttime="20170623 12:28:00.557"></status>
 </kw>
 <kw name="Set Selenium Implicit Wait" library="Selenium2Library">
 <doc>Sets Selenium 2's default implicit wait in seconds and</doc>
 <arguments>
 <arg>20</arg>
 </arguments>
-<status status="PASS" endtime="20170622 14:49:53.241" starttime="20170622 14:49:53.236"></status>
+<status status="PASS" endtime="20170623 12:28:04.521" starttime="20170623 12:28:04.517"></status>
 </kw>
 <kw name="Go To" library="Selenium2Library">
 <doc>Navigates the active browser instance to the provided URL.</doc>
 <arguments>
 <arg>http://employeportalweb-dev.us-east-1.elasticbeanstalk.com/</arg>
 </arguments>
-<msg timestamp="20170622 14:49:53.242" level="INFO">Opening url 'http://employeportalweb-dev.us-east-1.elasticbeanstalk.com/'</msg>
-<status status="PASS" endtime="20170622 14:49:55.900" starttime="20170622 14:49:53.242"></status>
+<msg timestamp="20170623 12:28:04.521" level="INFO">Opening url 'http://employeportalweb-dev.us-east-1.elasticbeanstalk.com/'</msg>
+<status status="PASS" endtime="20170623 12:28:08.001" starttime="20170623 12:28:04.521"></status>
 </kw>
-<status status="PASS" endtime="20170622 14:49:55.900" starttime="20170622 14:49:49.703"></status>
+<status status="PASS" endtime="20170623 12:28:08.002" starttime="20170623 12:28:00.556"></status>
 </kw>
 <kw name="Login" library="EmployeePortalApp">
 <kw name="Send User Name Valid" library="Login">
@@ -37,10 +37,10 @@
 <arg>${UserNameField}</arg>
 <arg>${ValidUsername}</arg>
 </arguments>
-<msg timestamp="20170622 14:49:55.902" level="INFO">Typing text 'dmohamed' into text field 'id=username'</msg>
-<status status="PASS" endtime="20170622 14:49:56.433" starttime="20170622 14:49:55.902"></status>
+<msg timestamp="20170623 12:28:08.004" level="INFO">Typing text 'dmohamed' into text field 'id=username'</msg>
+<status status="PASS" endtime="20170623 12:28:10.539" starttime="20170623 12:28:08.003"></status>
 </kw>
-<status status="PASS" endtime="20170622 14:49:56.433" starttime="20170622 14:49:55.901"></status>
+<status status="PASS" endtime="20170623 12:28:10.539" starttime="20170623 12:28:08.003"></status>
 </kw>
 <kw name="Send Password Valid" library="Login">
 <kw name="Input Text" library="Selenium2Library">
@@ -49,10 +49,10 @@
 <arg>${PasswordField}</arg>
 <arg>${ValidPassword}</arg>
 </arguments>
-<msg timestamp="20170622 14:49:56.434" level="INFO">Typing text 'Trevola1960' into text field 'id=password'</msg>
-<status status="PASS" endtime="20170622 14:49:56.684" starttime="20170622 14:49:56.434"></status>
+<msg timestamp="20170623 12:28:10.540" level="INFO">Typing text 'Trevola1960' into text field 'id=password'</msg>
+<status status="PASS" endtime="20170623 12:28:10.676" starttime="20170623 12:28:10.540"></status>
 </kw>
-<status status="PASS" endtime="20170622 14:49:56.684" starttime="20170622 14:49:56.433"></status>
+<status status="PASS" endtime="20170623 12:28:10.676" starttime="20170623 12:28:10.539"></status>
 </kw>
 <kw name="Click Login Button" library="Login">
 <kw name="Click Button" library="Selenium2Library">
@@ -60,12 +60,12 @@
 <arguments>
 <arg>${LoginBtn}</arg>
 </arguments>
-<msg timestamp="20170622 14:49:56.685" level="INFO">Clicking button 'id=Onsubmit'.</msg>
-<status status="PASS" endtime="20170622 14:49:56.755" starttime="20170622 14:49:56.685"></status>
+<msg timestamp="20170623 12:28:10.677" level="INFO">Clicking button 'id=Onsubmit'.</msg>
+<status status="PASS" endtime="20170623 12:28:10.743" starttime="20170623 12:28:10.677"></status>
 </kw>
-<status status="PASS" endtime="20170622 14:49:56.755" starttime="20170622 14:49:56.684"></status>
+<status status="PASS" endtime="20170623 12:28:10.744" starttime="20170623 12:28:10.676"></status>
 </kw>
-<status status="PASS" endtime="20170622 14:49:56.755" starttime="20170622 14:49:55.901"></status>
+<status status="PASS" endtime="20170623 12:28:10.744" starttime="20170623 12:28:08.002"></status>
 </kw>
 <kw name="Navigate to invoice create page" library="EmployeePortalApp">
 <kw name="Click Create Invoice Link" library="SideMenu">
@@ -74,10 +74,10 @@
 <arguments>
 <arg>${createinvoicelink}</arg>
 </arguments>
-<msg timestamp="20170622 14:49:56.757" level="INFO">Clicking element 'xpath=//*[@id="ep-sidebar"]/div[3]/span[4]/span/a'.</msg>
-<status status="PASS" endtime="20170622 14:49:58.703" starttime="20170622 14:49:56.757"></status>
+<msg timestamp="20170623 12:28:10.746" level="INFO">Clicking element 'xpath=//*[@id="ep-sidebar"]/div[3]/span[4]/span/a'.</msg>
+<status status="PASS" endtime="20170623 12:28:13.526" starttime="20170623 12:28:10.746"></status>
 </kw>
-<status status="PASS" endtime="20170622 14:49:58.703" starttime="20170622 14:49:56.756"></status>
+<status status="PASS" endtime="20170623 12:28:13.526" starttime="20170623 12:28:10.745"></status>
 </kw>
 <kw name="Input Tracking Number for Invoice" library="CreateInvoice">
 <kw name="Wait Until Page Contains Element" library="Selenium2Library">
@@ -85,7 +85,7 @@
 <arguments>
 <arg>${TrackingNumberSearchField}</arg>
 </arguments>
-<status status="PASS" endtime="20170622 14:49:59.019" starttime="20170622 14:49:58.704"></status>
+<status status="PASS" endtime="20170623 12:28:13.766" starttime="20170623 12:28:13.527"></status>
 </kw>
 <kw name="Input Text" library="Selenium2Library">
 <doc>Types the given `text` into text field identified by `locator`.</doc>
@@ -93,10 +93,10 @@
 <arg>${TrackingNumberSearchField}</arg>
 <arg>93095528</arg>
 </arguments>
-<msg timestamp="20170622 14:49:59.020" level="INFO">Typing text '93095528' into text field 'xpath= //input[@placeholder='Tracking/SR Number']'</msg>
-<status status="PASS" endtime="20170622 14:49:59.131" starttime="20170622 14:49:59.020"></status>
+<msg timestamp="20170623 12:28:13.767" level="INFO">Typing text '93095528' into text field 'xpath= //input[@placeholder='Tracking/SR Number']'</msg>
+<status status="PASS" endtime="20170623 12:28:13.859" starttime="20170623 12:28:13.767"></status>
 </kw>
-<status status="PASS" endtime="20170622 14:49:59.132" starttime="20170622 14:49:58.703"></status>
+<status status="PASS" endtime="20170623 12:28:13.859" starttime="20170623 12:28:13.527"></status>
 </kw>
 <kw name="Click Invoice Search Button" library="CreateInvoice">
 <kw name="Wait Until Page Contains Element" library="Selenium2Library">
@@ -104,17 +104,17 @@
 <arguments>
 <arg>${InvoiceSearchButton}</arg>
 </arguments>
-<status status="PASS" endtime="20170622 14:49:59.150" starttime="20170622 14:49:59.133"></status>
+<status status="PASS" endtime="20170623 12:28:13.874" starttime="20170623 12:28:13.860"></status>
 </kw>
 <kw name="Click Element" library="Selenium2Library">
 <doc>Click element identified by `locator`.</doc>
 <arguments>
 <arg>${InvoiceSearchButton}</arg>
 </arguments>
-<msg timestamp="20170622 14:49:59.151" level="INFO">Clicking element 'xpath = //button[@ng-click='vm.fetchSr()']'.</msg>
-<status status="PASS" endtime="20170622 14:49:59.216" starttime="20170622 14:49:59.151"></status>
+<msg timestamp="20170623 12:28:13.875" level="INFO">Clicking element 'xpath = //button[@ng-click='vm.fetchSr()']'.</msg>
+<status status="PASS" endtime="20170623 12:28:13.920" starttime="20170623 12:28:13.874"></status>
 </kw>
-<status status="PASS" endtime="20170622 14:49:59.217" starttime="20170622 14:49:59.132"></status>
+<status status="PASS" endtime="20170623 12:28:13.920" starttime="20170623 12:28:13.859"></status>
 </kw>
 <kw name="Click Create New Invoice Button" library="CreateInvoice">
 <kw name="Wait Until Page Contains Element" library="Selenium2Library">
@@ -123,19 +123,19 @@
 <arg>${CreateInvoiceButton}</arg>
 <arg>10</arg>
 </arguments>
-<status status="PASS" endtime="20170622 14:49:59.814" starttime="20170622 14:49:59.218"></status>
+<status status="PASS" endtime="20170623 12:28:14.404" starttime="20170623 12:28:13.921"></status>
 </kw>
 <kw name="Click Element" library="Selenium2Library">
 <doc>Click element identified by `locator`.</doc>
 <arguments>
 <arg>${CreateInvoiceButton}</arg>
 </arguments>
-<msg timestamp="20170622 14:49:59.815" level="INFO">Clicking element 'xpath= //button[@ng-click='vm.createInvoice()']'.</msg>
-<status status="PASS" endtime="20170622 14:49:59.869" starttime="20170622 14:49:59.815"></status>
+<msg timestamp="20170623 12:28:14.405" level="INFO">Clicking element 'xpath= //button[@ng-click='vm.createInvoice()']'.</msg>
+<status status="PASS" endtime="20170623 12:28:14.461" starttime="20170623 12:28:14.405"></status>
 </kw>
-<status status="PASS" endtime="20170622 14:49:59.869" starttime="20170622 14:49:59.217"></status>
+<status status="PASS" endtime="20170623 12:28:14.461" starttime="20170623 12:28:13.920"></status>
 </kw>
-<status status="PASS" endtime="20170622 14:49:59.869" starttime="20170622 14:49:56.756"></status>
+<status status="PASS" endtime="20170623 12:28:14.461" starttime="20170623 12:28:10.745"></status>
 </kw>
 <kw name="Input invoice details" library="EmployeePortalApp">
 <kw name="Input SP Invoice Number" library="CreateInvoice">
@@ -148,8 +148,8 @@
 <assign>
 <var>${InvoiceNumberRandom}</var>
 </assign>
-<msg timestamp="20170622 14:49:59.872" level="INFO">${InvoiceNumberRandom} = 02841236</msg>
-<status status="PASS" endtime="20170622 14:49:59.872" starttime="20170622 14:49:59.872"></status>
+<msg timestamp="20170623 12:28:14.463" level="INFO">${InvoiceNumberRandom} = 93160842</msg>
+<status status="PASS" endtime="20170623 12:28:14.463" starttime="20170623 12:28:14.462"></status>
 </kw>
 <kw name="Input Text" library="Selenium2Library">
 <doc>Types the given `text` into text field identified by `locator`.</doc>
@@ -157,10 +157,10 @@
 <arg>${InvoiceNumberField}</arg>
 <arg>${InvoiceNumberRandom}</arg>
 </arguments>
-<msg timestamp="20170622 14:49:59.873" level="INFO">Typing text '02841236' into text field 'xpath= //input[@ng-model='vm.invHeader.spInvoiceNumber']'</msg>
-<status status="PASS" endtime="20170622 14:50:00.693" starttime="20170622 14:49:59.872"></status>
+<msg timestamp="20170623 12:28:14.463" level="INFO">Typing text '93160842' into text field 'xpath= //input[@ng-model='vm.invHeader.spInvoiceNumber']'</msg>
+<status status="PASS" endtime="20170623 12:28:16.864" starttime="20170623 12:28:14.463"></status>
 </kw>
-<status status="PASS" endtime="20170622 14:50:00.693" starttime="20170622 14:49:59.871"></status>
+<status status="PASS" endtime="20170623 12:28:16.864" starttime="20170623 12:28:14.462"></status>
 </kw>
 <kw name="Input GL Code" library="CreateInvoice">
 <kw name="Sleep" library="BuiltIn">
@@ -168,8 +168,8 @@
 <arguments>
 <arg>3s</arg>
 </arguments>
-<msg timestamp="20170622 14:50:03.695" level="INFO">Slept 3 seconds</msg>
-<status status="PASS" endtime="20170622 14:50:03.695" starttime="20170622 14:50:00.694"></status>
+<msg timestamp="20170623 12:28:19.865" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" endtime="20170623 12:28:19.865" starttime="20170623 12:28:16.865"></status>
 </kw>
 <kw name="Input Text" library="Selenium2Library">
 <doc>Types the given `text` into text field identified by `locator`.</doc>
@@ -177,18 +177,18 @@
 <arg>${GLcodeField}</arg>
 <arg>7633</arg>
 </arguments>
-<msg timestamp="20170622 14:50:03.695" level="INFO">Typing text '7633' into text field 'xpath= //*[text()=' GL Code :']//following::input[1]'</msg>
-<status status="PASS" endtime="20170622 14:50:03.860" starttime="20170622 14:50:03.695"></status>
+<msg timestamp="20170623 12:28:19.866" level="INFO">Typing text '7633' into text field 'xpath= //*[text()=' GL Code :']//following::input[1]'</msg>
+<status status="PASS" endtime="20170623 12:28:20.024" starttime="20170623 12:28:19.866"></status>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <doc>Pauses the test executed for the given time.</doc>
 <arguments>
 <arg>3s</arg>
 </arguments>
-<msg timestamp="20170622 14:50:06.863" level="INFO">Slept 3 seconds</msg>
-<status status="PASS" endtime="20170622 14:50:06.863" starttime="20170622 14:50:03.861"></status>
+<msg timestamp="20170623 12:28:23.025" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" endtime="20170623 12:28:23.025" starttime="20170623 12:28:20.024"></status>
 </kw>
-<status status="PASS" endtime="20170622 14:50:06.863" starttime="20170622 14:50:00.694"></status>
+<status status="PASS" endtime="20170623 12:28:23.026" starttime="20170623 12:28:16.864"></status>
 </kw>
 <kw name="Select GL Code" library="CreateInvoice">
 <kw name="Wait Until Page Contains Element" library="Selenium2Library">
@@ -196,17 +196,17 @@
 <arguments>
 <arg>${glcodeselection}</arg>
 </arguments>
-<status status="PASS" endtime="20170622 14:50:06.873" starttime="20170622 14:50:06.863"></status>
+<status status="PASS" endtime="20170623 12:28:23.071" starttime="20170623 12:28:23.028"></status>
 </kw>
 <kw name="Click Element" library="Selenium2Library">
 <doc>Click element identified by `locator`.</doc>
 <arguments>
 <arg>${GLcodeselection}</arg>
 </arguments>
-<msg timestamp="20170622 14:50:06.873" level="INFO">Clicking element 'xpath= //a[@title='Miscellaneous Gas Expense (7633)']'.</msg>
-<status status="PASS" endtime="20170622 14:50:06.916" starttime="20170622 14:50:06.873"></status>
+<msg timestamp="20170623 12:28:23.072" level="INFO">Clicking element 'xpath= //a[@title='Miscellaneous Gas Expense (7633)']'.</msg>
+<status status="PASS" endtime="20170623 12:28:23.138" starttime="20170623 12:28:23.071"></status>
 </kw>
-<status status="PASS" endtime="20170622 14:50:06.916" starttime="20170622 14:50:06.863"></status>
+<status status="PASS" endtime="20170623 12:28:23.138" starttime="20170623 12:28:23.027"></status>
 </kw>
 <kw name="Open Date Select Celandar" library="CreateInvoice">
 <kw name="Click Element" library="Selenium2Library">
@@ -214,10 +214,10 @@
 <arguments>
 <arg>${servicedatecalendarbutton}</arg>
 </arguments>
-<msg timestamp="20170622 14:50:06.917" level="INFO">Clicking element 'xpath= //i[@class='fa fa-calendar']'.</msg>
-<status status="PASS" endtime="20170622 14:50:06.975" starttime="20170622 14:50:06.917"></status>
+<msg timestamp="20170623 12:28:23.140" level="INFO">Clicking element 'xpath= //i[@class='fa fa-calendar']'.</msg>
+<status status="PASS" endtime="20170623 12:28:23.294" starttime="20170623 12:28:23.139"></status>
 </kw>
-<status status="PASS" endtime="20170622 14:50:06.975" starttime="20170622 14:50:06.917"></status>
+<status status="PASS" endtime="20170623 12:28:23.294" starttime="20170623 12:28:23.139"></status>
 </kw>
 <kw name="Select Todays Date" library="CreateInvoice">
 <kw name="Click Element" library="Selenium2Library">
@@ -225,10 +225,10 @@
 <arguments>
 <arg>${todaysdatebutton}</arg>
 </arguments>
-<msg timestamp="20170622 14:50:06.977" level="INFO">Clicking element 'xpath= //button[text()='Today']'.</msg>
-<status status="PASS" endtime="20170622 14:50:07.153" starttime="20170622 14:50:06.976"></status>
+<msg timestamp="20170623 12:28:23.295" level="INFO">Clicking element 'xpath= //button[text()='Today']'.</msg>
+<status status="PASS" endtime="20170623 12:28:23.352" starttime="20170623 12:28:23.294"></status>
 </kw>
-<status status="PASS" endtime="20170622 14:50:07.153" starttime="20170622 14:50:06.976"></status>
+<status status="PASS" endtime="20170623 12:28:23.352" starttime="20170623 12:28:23.294"></status>
 </kw>
 <kw name="Input Work Description" library="CreateInvoice">
 <kw name="Input Text" library="Selenium2Library">
@@ -237,10 +237,10 @@
 <arg>${WorkDescriptionField}</arg>
 <arg>"Automation Test Invoice"</arg>
 </arguments>
-<msg timestamp="20170622 14:50:07.154" level="INFO">Typing text '"Automation Test Invoice"' into text field 'id=txtNote'</msg>
-<status status="PASS" endtime="20170622 14:50:07.430" starttime="20170622 14:50:07.154"></status>
+<msg timestamp="20170623 12:28:23.353" level="INFO">Typing text '"Automation Test Invoice"' into text field 'id=txtNote'</msg>
+<status status="PASS" endtime="20170623 12:28:23.582" starttime="20170623 12:28:23.353"></status>
 </kw>
-<status status="PASS" endtime="20170622 14:50:07.430" starttime="20170622 14:50:07.153"></status>
+<status status="PASS" endtime="20170623 12:28:23.583" starttime="20170623 12:28:23.353"></status>
 </kw>
 <kw name="Select GL Routing Code" library="CreateInvoice">
 <kw name="Wait Until Element Is Visible" library="Selenium2Library">
@@ -249,19 +249,19 @@
 <arg>${paidandinvoicedroutingcode}</arg>
 <arg>10</arg>
 </arguments>
-<status status="PASS" endtime="20170622 14:50:07.461" starttime="20170622 14:50:07.431"></status>
+<status status="PASS" endtime="20170623 12:28:23.609" starttime="20170623 12:28:23.583"></status>
 </kw>
 <kw name="Click Button" library="Selenium2Library">
 <doc>Clicks a button identified by `locator`.</doc>
 <arguments>
 <arg>${PaidandInvoicedRoutingCode}</arg>
 </arguments>
-<msg timestamp="20170622 14:50:07.462" level="INFO">Clicking button 'xpath= //input[@value='N']'.</msg>
-<status status="PASS" endtime="20170622 14:50:07.513" starttime="20170622 14:50:07.462"></status>
+<msg timestamp="20170623 12:28:23.610" level="INFO">Clicking button 'xpath= //input[@value='N']'.</msg>
+<status status="PASS" endtime="20170623 12:28:23.655" starttime="20170623 12:28:23.609"></status>
 </kw>
-<status status="PASS" endtime="20170622 14:50:07.513" starttime="20170622 14:50:07.430"></status>
+<status status="PASS" endtime="20170623 12:28:23.655" starttime="20170623 12:28:23.583"></status>
 </kw>
-<status status="PASS" endtime="20170622 14:50:07.513" starttime="20170622 14:49:59.870"></status>
+<status status="PASS" endtime="20170623 12:28:23.655" starttime="20170623 12:28:14.462"></status>
 </kw>
 <kw name="Add Labor Line Item" library="EmployeePortalApp">
 <kw name="Click Add Button" library="CreateInvoice">
@@ -270,10 +270,10 @@
 <arguments>
 <arg>${addlineitembutton}</arg>
 </arguments>
-<msg timestamp="20170622 14:50:07.515" level="INFO">Clicking element 'xpath= //button[@ng-click='vm.addLineItem()']'.</msg>
-<status status="PASS" endtime="20170622 14:50:07.571" starttime="20170622 14:50:07.515"></status>
+<msg timestamp="20170623 12:28:23.658" level="INFO">Clicking element 'xpath= //button[@ng-click='vm.addLineItem()']'.</msg>
+<status status="PASS" endtime="20170623 12:28:23.703" starttime="20170623 12:28:23.658"></status>
 </kw>
-<status status="PASS" endtime="20170622 14:50:07.571" starttime="20170622 14:50:07.514"></status>
+<status status="PASS" endtime="20170623 12:28:23.703" starttime="20170623 12:28:23.657"></status>
 </kw>
 <kw name="Select Labor Line Item" library="CreateInvoice">
 <kw name="Click Element" library="Selenium2Library">
@@ -281,10 +281,10 @@
 <arguments>
 <arg>${laborlineitemselection}</arg>
 </arguments>
-<msg timestamp="20170622 14:50:07.573" level="INFO">Clicking element 'xpath =//option[@label='LABOR']'.</msg>
-<status status="PASS" endtime="20170622 14:50:07.970" starttime="20170622 14:50:07.572"></status>
+<msg timestamp="20170623 12:28:23.705" level="INFO">Clicking element 'xpath =//option[@label='LABOR']'.</msg>
+<status status="PASS" endtime="20170623 12:28:24.230" starttime="20170623 12:28:23.705"></status>
 </kw>
-<status status="PASS" endtime="20170622 14:50:07.970" starttime="20170622 14:50:07.572"></status>
+<status status="PASS" endtime="20170623 12:28:24.231" starttime="20170623 12:28:23.704"></status>
 </kw>
 <kw name="Select Technician Labor" library="CreateInvoice">
 <kw name="Click Element" library="Selenium2Library">
@@ -292,10 +292,10 @@
 <arguments>
 <arg>${technicianlabor}</arg>
 </arguments>
-<msg timestamp="20170622 14:50:07.972" level="INFO">Clicking element 'xpath = //option[@value='TECHNICIAN LABOR']'.</msg>
-<status status="PASS" endtime="20170622 14:50:08.040" starttime="20170622 14:50:07.971"></status>
+<msg timestamp="20170623 12:28:24.232" level="INFO">Clicking element 'xpath = //option[@value='TECHNICIAN LABOR']'.</msg>
+<status status="PASS" endtime="20170623 12:28:24.295" starttime="20170623 12:28:24.231"></status>
 </kw>
-<status status="PASS" endtime="20170622 14:50:08.040" starttime="20170622 14:50:07.971"></status>
+<status status="PASS" endtime="20170623 12:28:24.296" starttime="20170623 12:28:24.231"></status>
 </kw>
 <kw name="Input SP Quantity" library="CreateInvoice">
 <kw name="Wait Until Page Contains Element" library="Selenium2Library">
@@ -303,14 +303,14 @@
 <arguments>
 <arg>${spquantityfield}</arg>
 </arguments>
-<status status="PASS" endtime="20170622 14:50:08.093" starttime="20170622 14:50:08.041"></status>
+<status status="PASS" endtime="20170623 12:28:24.346" starttime="20170623 12:28:24.297"></status>
 </kw>
 <kw name="Clear Element Text" library="Selenium2Library">
 <doc>Clears the text value of text entry element identified by `locator`.</doc>
 <arguments>
 <arg>${spquantityfield}</arg>
 </arguments>
-<status status="PASS" endtime="20170622 14:50:08.158" starttime="20170622 14:50:08.093"></status>
+<status status="PASS" endtime="20170623 12:28:24.391" starttime="20170623 12:28:24.346"></status>
 </kw>
 <kw name="Input Text" library="Selenium2Library">
 <doc>Types the given `text` into text field identified by `locator`.</doc>
@@ -318,10 +318,10 @@
 <arg>${spquantityfield}</arg>
 <arg>1</arg>
 </arguments>
-<msg timestamp="20170622 14:50:08.159" level="INFO">Typing text '1' into text field 'xpath=//input[@name='spQuantity']'</msg>
-<status status="PASS" endtime="20170622 14:50:08.240" starttime="20170622 14:50:08.158"></status>
+<msg timestamp="20170623 12:28:24.392" level="INFO">Typing text '1' into text field 'xpath=//input[@name='spQuantity']'</msg>
+<status status="PASS" endtime="20170623 12:28:24.460" starttime="20170623 12:28:24.392"></status>
 </kw>
-<status status="PASS" endtime="20170622 14:50:08.240" starttime="20170622 14:50:08.040"></status>
+<status status="PASS" endtime="20170623 12:28:24.460" starttime="20170623 12:28:24.296"></status>
 </kw>
 <kw name="Click Save" library="CreateInvoice">
 <kw name="Click Element" library="Selenium2Library">
@@ -329,12 +329,12 @@
 <arguments>
 <arg>${savelineitemsbutton}</arg>
 </arguments>
-<msg timestamp="20170622 14:50:08.243" level="INFO">Clicking element 'xpath =//*[@class='fa fa-check']'.</msg>
-<status status="PASS" endtime="20170622 14:50:08.376" starttime="20170622 14:50:08.242"></status>
+<msg timestamp="20170623 12:28:24.461" level="INFO">Clicking element 'xpath =//*[@class='fa fa-check']'.</msg>
+<status status="PASS" endtime="20170623 12:28:24.565" starttime="20170623 12:28:24.461"></status>
 </kw>
-<status status="PASS" endtime="20170622 14:50:08.377" starttime="20170622 14:50:08.242"></status>
+<status status="PASS" endtime="20170623 12:28:24.565" starttime="20170623 12:28:24.460"></status>
 </kw>
-<status status="PASS" endtime="20170622 14:50:08.377" starttime="20170622 14:50:07.514"></status>
+<status status="PASS" endtime="20170623 12:28:24.566" starttime="20170623 12:28:23.656"></status>
 </kw>
 <kw name="Upload Attachment" library="CreateInvoice">
 <kw name="Sleep" library="BuiltIn">
@@ -342,8 +342,8 @@
 <arguments>
 <arg>5s</arg>
 </arguments>
-<msg timestamp="20170622 14:50:13.384" level="INFO">Slept 5 seconds</msg>
-<status status="PASS" endtime="20170622 14:50:13.384" starttime="20170622 14:50:08.379"></status>
+<msg timestamp="20170623 12:28:29.568" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" endtime="20170623 12:28:29.568" starttime="20170623 12:28:24.568"></status>
 </kw>
 <kw name="Choose File" library="Selenium2Library">
 <doc>Inputs the `file_path` into file input field found by `locator`.</doc>
@@ -351,17 +351,17 @@
 <arg>${uploadattachmentbutton}</arg>
 <arg>${attachmentfile}</arg>
 </arguments>
-<status status="PASS" endtime="20170622 14:50:13.465" starttime="20170622 14:50:13.384"></status>
+<status status="PASS" endtime="20170623 12:28:29.639" starttime="20170623 12:28:29.569"></status>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <doc>Pauses the test executed for the given time.</doc>
 <arguments>
 <arg>2s</arg>
 </arguments>
-<msg timestamp="20170622 14:50:15.466" level="INFO">Slept 2 seconds</msg>
-<status status="PASS" endtime="20170622 14:50:15.467" starttime="20170622 14:50:13.466"></status>
+<msg timestamp="20170623 12:28:31.640" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" endtime="20170623 12:28:31.640" starttime="20170623 12:28:29.640"></status>
 </kw>
-<status status="PASS" endtime="20170622 14:50:15.467" starttime="20170622 14:50:08.378"></status>
+<status status="PASS" endtime="20170623 12:28:31.640" starttime="20170623 12:28:24.567"></status>
 </kw>
 <kw name="Submit Invoice" library="EmployeePortalApp">
 <kw name="Click Save Invoice" library="CreateInvoice">
@@ -370,18 +370,18 @@
 <arguments>
 <arg>${saveinvoicebutton}</arg>
 </arguments>
-<msg timestamp="20170622 14:50:15.473" level="INFO">Clicking element 'xpath= //button[@ng-disabled='vm.isInvoiceAuditInProgress']'.</msg>
-<status status="PASS" endtime="20170622 14:50:15.552" starttime="20170622 14:50:15.473"></status>
+<msg timestamp="20170623 12:28:31.642" level="INFO">Clicking element 'xpath= //button[@ng-disabled='vm.isInvoiceAuditInProgress']'.</msg>
+<status status="PASS" endtime="20170623 12:28:31.713" starttime="20170623 12:28:31.642"></status>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <doc>Pauses the test executed for the given time.</doc>
 <arguments>
 <arg>2s</arg>
 </arguments>
-<msg timestamp="20170622 14:50:17.553" level="INFO">Slept 2 seconds</msg>
-<status status="PASS" endtime="20170622 14:50:17.553" starttime="20170622 14:50:15.553"></status>
+<msg timestamp="20170623 12:28:33.714" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" endtime="20170623 12:28:33.714" starttime="20170623 12:28:31.714"></status>
 </kw>
-<status status="PASS" endtime="20170622 14:50:17.553" starttime="20170622 14:50:15.472"></status>
+<status status="PASS" endtime="20170623 12:28:33.715" starttime="20170623 12:28:31.641"></status>
 </kw>
 <kw name="Click Submit Invoice" library="CreateInvoice">
 <kw name="Mouse Over" library="Selenium2Library">
@@ -389,24 +389,815 @@
 <arguments>
 <arg>${submitinvoicebutton}</arg>
 </arguments>
-<msg timestamp="20170622 14:50:17.553" level="INFO">Simulating Mouse Over on element 'xpath= //button[@class='btn btn-primary pull-left']'</msg>
-<status status="PASS" endtime="20170622 14:50:17.571" starttime="20170622 14:50:17.553"></status>
+<msg timestamp="20170623 12:28:33.718" level="INFO">Simulating Mouse Over on element 'xpath= //button[@class='btn btn-primary pull-left']'</msg>
+<status status="PASS" endtime="20170623 12:28:33.771" starttime="20170623 12:28:33.717"></status>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <doc>Pauses the test executed for the given time.</doc>
 <arguments>
 <arg>2s</arg>
 </arguments>
-<msg timestamp="20170622 14:50:19.572" level="INFO">Slept 2 seconds</msg>
-<status status="PASS" endtime="20170622 14:50:19.572" starttime="20170622 14:50:17.571"></status>
+<msg timestamp="20170623 12:28:35.771" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" endtime="20170623 12:28:35.771" starttime="20170623 12:28:33.771"></status>
 </kw>
 <kw name="Click Button" library="Selenium2Library">
 <doc>Clicks a button identified by `locator`.</doc>
 <arguments>
 <arg>${submitinvoicebutton}</arg>
 </arguments>
-<msg timestamp="20170622 14:50:19.572" level="INFO">Clicking button 'xpath= //button[@class='btn btn-primary pull-left']'.</msg>
-<status status="PASS" endtime="20170622 14:50:19.641" starttime="20170622 14:50:19.572"></status>
+<msg timestamp="20170623 12:28:35.773" level="INFO">Clicking button 'xpath= //button[@class='btn btn-primary pull-left']'.</msg>
+<status status="PASS" endtime="20170623 12:28:35.870" starttime="20170623 12:28:35.772"></status>
+</kw>
+<kw name="Run Keyword And Return Status" library="BuiltIn">
+<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
+<arguments>
+<arg>wait until page contains element</arg>
+<arg>${SubmitInvoiceW/warnings}</arg>
+<arg>10</arg>
+</arguments>
+<assign>
+<var>${WarningCheck}</var>
+</assign>
+<kw name="Wait Until Page Contains Element" library="Selenium2Library">
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<arguments>
+<arg>${SubmitInvoiceW/warnings}</arg>
+<arg>10</arg>
+</arguments>
+<status status="PASS" endtime="20170623 12:28:49.632" starttime="20170623 12:28:35.871"></status>
+</kw>
+<msg timestamp="20170623 12:28:49.632" level="INFO">${WarningCheck} = True</msg>
+<status status="PASS" endtime="20170623 12:28:49.632" starttime="20170623 12:28:35.871"></status>
+</kw>
+<kw name="Run Keyword If" library="BuiltIn">
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<arguments>
+<arg>${WarningCheck}</arg>
+<arg>click element</arg>
+<arg>${SubmitInvoiceW/warnings}</arg>
+</arguments>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>${SubmitInvoiceW/warnings}</arg>
+</arguments>
+<msg timestamp="20170623 12:28:49.633" level="INFO">Clicking element 'xpath= //*[text()='Submit w/ Warnings']'.</msg>
+<status status="PASS" endtime="20170623 12:28:49.695" starttime="20170623 12:28:49.632"></status>
+</kw>
+<status status="PASS" endtime="20170623 12:28:49.695" starttime="20170623 12:28:49.632"></status>
+</kw>
+<status status="PASS" endtime="20170623 12:28:49.696" starttime="20170623 12:28:33.715"></status>
+</kw>
+<status status="PASS" endtime="20170623 12:28:49.696" starttime="20170623 12:28:31.640"></status>
+</kw>
+<kw name="Check for invoice success" library="EmployeePortalApp">
+<kw name="Check invoice success alert" library="CreateInvoice">
+<kw name="Wait Until Page Contains Element" library="Selenium2Library">
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<arguments>
+<arg>${invoicecreatesuccessfulalert}</arg>
+<arg>10</arg>
+</arguments>
+<status status="PASS" endtime="20170623 12:28:49.716" starttime="20170623 12:28:49.699"></status>
+</kw>
+<kw name="Wait Until Page Contains Element" library="Selenium2Library">
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<arguments>
+<arg>${invoicecreatesuccessfullmessage}</arg>
+<arg>20</arg>
+</arguments>
+<status status="PASS" endtime="20170623 12:28:50.765" starttime="20170623 12:28:49.716"></status>
+</kw>
+<status status="PASS" endtime="20170623 12:28:50.765" starttime="20170623 12:28:49.699"></status>
+</kw>
+<status status="PASS" endtime="20170623 12:28:50.765" starttime="20170623 12:28:49.698"></status>
+</kw>
+<tags>
+<tag>Invoice</tag>
+<tag>Smoke</tag>
+</tags>
+<status status="PASS" endtime="20170623 12:28:50.766" critical="yes" starttime="20170623 12:28:00.555"></status>
+</test>
+<test id="s1-t2" name="User should not be able to create an invoice w/o an invoice number">
+<kw type="setup" name="Begin Employee Portal TEst" library="Common">
+<kw name="Open Browser" library="Selenium2Library">
+<doc>Opens a new browser instance to given URL.</doc>
+<arguments>
+<arg>about:blank</arg>
+<arg>chrome</arg>
+</arguments>
+<msg timestamp="20170623 12:28:50.772" level="INFO">Opening browser 'chrome' to base url 'about:blank'</msg>
+<status status="PASS" endtime="20170623 12:28:54.819" starttime="20170623 12:28:50.772"></status>
+</kw>
+<kw name="Set Selenium Implicit Wait" library="Selenium2Library">
+<doc>Sets Selenium 2's default implicit wait in seconds and</doc>
+<arguments>
+<arg>20</arg>
+</arguments>
+<status status="PASS" endtime="20170623 12:28:54.823" starttime="20170623 12:28:54.819"></status>
+</kw>
+<kw name="Go To" library="Selenium2Library">
+<doc>Navigates the active browser instance to the provided URL.</doc>
+<arguments>
+<arg>http://employeportalweb-dev.us-east-1.elasticbeanstalk.com/</arg>
+</arguments>
+<msg timestamp="20170623 12:28:54.824" level="INFO">Opening url 'http://employeportalweb-dev.us-east-1.elasticbeanstalk.com/'</msg>
+<kw name="Capture Page Screenshot" library="Selenium2Library">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<msg timestamp="20170623 12:34:05.313" level="FAIL">WebDriverException: Message: unknown error: cannot get automation extension
+from unknown error: page could not be found: chrome-extension://aapnijgdinlhnhlmodcfapnahmbfebeb/_generated_background_page.html
+  (Session info: chrome=58.0.3029.110)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 6.1.7601 SP1 x86_64)
+</msg>
+<status status="FAIL" endtime="20170623 12:34:05.313" starttime="20170623 12:33:54.918"></status>
+</kw>
+<msg timestamp="20170623 12:34:05.313" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: WebDriverException: Message: unknown error: cannot get automation extension
+from unknown error: page could not be found: chrome-extension://aapnijgdinlhnhlmodcfapnahmbfebeb/_generated_background_page.html
+  (Session info: chrome=58.0.3029.110)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 6.1.7601 SP1 x86_64)
+</msg>
+<msg timestamp="20170623 12:34:05.322" level="FAIL">TimeoutException: Message: timeout: cannot determine loading status
+from timeout: Timed out receiving message from renderer: -0.048
+  (Session info: chrome=58.0.3029.110)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 6.1.7601 SP1 x86_64)
+</msg>
+<status status="FAIL" endtime="20170623 12:34:05.322" starttime="20170623 12:28:54.824"></status>
+</kw>
+<status status="FAIL" endtime="20170623 12:34:05.322" starttime="20170623 12:28:50.771"></status>
+</kw>
+<tags>
+<tag>Invoice</tag>
+</tags>
+<status status="FAIL" endtime="20170623 12:34:05.323" critical="yes" starttime="20170623 12:28:50.770">Setup failed:
+TimeoutException: Message: timeout: cannot determine loading status
+from timeout: Timed out receiving message from renderer: -0.048
+  (Session info: chrome=58.0.3029.110)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 6.1.7601 SP1 x86_64)
+</status>
+</test>
+<test id="s1-t3" name="User should not be able to create an invoice w/o a GL code">
+<kw type="setup" name="Begin Employee Portal TEst" library="Common">
+<kw name="Open Browser" library="Selenium2Library">
+<doc>Opens a new browser instance to given URL.</doc>
+<arguments>
+<arg>about:blank</arg>
+<arg>chrome</arg>
+</arguments>
+<msg timestamp="20170623 12:34:05.328" level="INFO">Opening browser 'chrome' to base url 'about:blank'</msg>
+<status status="PASS" endtime="20170623 12:34:08.790" starttime="20170623 12:34:05.328"></status>
+</kw>
+<kw name="Set Selenium Implicit Wait" library="Selenium2Library">
+<doc>Sets Selenium 2's default implicit wait in seconds and</doc>
+<arguments>
+<arg>20</arg>
+</arguments>
+<status status="PASS" endtime="20170623 12:34:08.797" starttime="20170623 12:34:08.790"></status>
+</kw>
+<kw name="Go To" library="Selenium2Library">
+<doc>Navigates the active browser instance to the provided URL.</doc>
+<arguments>
+<arg>http://employeportalweb-dev.us-east-1.elasticbeanstalk.com/</arg>
+</arguments>
+<msg timestamp="20170623 12:34:08.797" level="INFO">Opening url 'http://employeportalweb-dev.us-east-1.elasticbeanstalk.com/'</msg>
+<status status="PASS" endtime="20170623 12:34:11.738" starttime="20170623 12:34:08.797"></status>
+</kw>
+<status status="PASS" endtime="20170623 12:34:11.739" starttime="20170623 12:34:05.327"></status>
+</kw>
+<kw name="Login" library="EmployeePortalApp">
+<kw name="Send User Name Valid" library="Login">
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>${UserNameField}</arg>
+<arg>${ValidUsername}</arg>
+</arguments>
+<msg timestamp="20170623 12:34:11.741" level="INFO">Typing text 'dmohamed' into text field 'id=username'</msg>
+<status status="PASS" endtime="20170623 12:34:12.140" starttime="20170623 12:34:11.741"></status>
+</kw>
+<status status="PASS" endtime="20170623 12:34:12.140" starttime="20170623 12:34:11.740"></status>
+</kw>
+<kw name="Send Password Valid" library="Login">
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>${PasswordField}</arg>
+<arg>${ValidPassword}</arg>
+</arguments>
+<msg timestamp="20170623 12:34:12.141" level="INFO">Typing text 'Trevola1960' into text field 'id=password'</msg>
+<status status="PASS" endtime="20170623 12:34:12.276" starttime="20170623 12:34:12.141"></status>
+</kw>
+<status status="PASS" endtime="20170623 12:34:12.277" starttime="20170623 12:34:12.141"></status>
+</kw>
+<kw name="Click Login Button" library="Login">
+<kw name="Click Button" library="Selenium2Library">
+<doc>Clicks a button identified by `locator`.</doc>
+<arguments>
+<arg>${LoginBtn}</arg>
+</arguments>
+<msg timestamp="20170623 12:34:12.278" level="INFO">Clicking button 'id=Onsubmit'.</msg>
+<status status="PASS" endtime="20170623 12:34:12.365" starttime="20170623 12:34:12.277"></status>
+</kw>
+<status status="PASS" endtime="20170623 12:34:12.366" starttime="20170623 12:34:12.277"></status>
+</kw>
+<status status="PASS" endtime="20170623 12:34:12.366" starttime="20170623 12:34:11.740"></status>
+</kw>
+<kw name="Navigate to invoice create page" library="EmployeePortalApp">
+<kw name="Click Create Invoice Link" library="SideMenu">
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>${createinvoicelink}</arg>
+</arguments>
+<msg timestamp="20170623 12:34:12.371" level="INFO">Clicking element 'xpath=//*[@id="ep-sidebar"]/div[3]/span[4]/span/a'.</msg>
+<status status="PASS" endtime="20170623 12:34:16.571" starttime="20170623 12:34:12.371"></status>
+</kw>
+<status status="PASS" endtime="20170623 12:34:16.572" starttime="20170623 12:34:12.370"></status>
+</kw>
+<kw name="Input Tracking Number for Invoice" library="CreateInvoice">
+<kw name="Wait Until Page Contains Element" library="Selenium2Library">
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<arguments>
+<arg>${TrackingNumberSearchField}</arg>
+</arguments>
+<status status="PASS" endtime="20170623 12:34:16.813" starttime="20170623 12:34:16.573"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>${TrackingNumberSearchField}</arg>
+<arg>93095528</arg>
+</arguments>
+<msg timestamp="20170623 12:34:16.814" level="INFO">Typing text '93095528' into text field 'xpath= //input[@placeholder='Tracking/SR Number']'</msg>
+<status status="PASS" endtime="20170623 12:34:16.939" starttime="20170623 12:34:16.814"></status>
+</kw>
+<status status="PASS" endtime="20170623 12:34:16.939" starttime="20170623 12:34:16.572"></status>
+</kw>
+<kw name="Click Invoice Search Button" library="CreateInvoice">
+<kw name="Wait Until Page Contains Element" library="Selenium2Library">
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<arguments>
+<arg>${InvoiceSearchButton}</arg>
+</arguments>
+<status status="PASS" endtime="20170623 12:34:16.954" starttime="20170623 12:34:16.940"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>${InvoiceSearchButton}</arg>
+</arguments>
+<msg timestamp="20170623 12:34:16.955" level="INFO">Clicking element 'xpath = //button[@ng-click='vm.fetchSr()']'.</msg>
+<status status="PASS" endtime="20170623 12:34:17.002" starttime="20170623 12:34:16.955"></status>
+</kw>
+<status status="PASS" endtime="20170623 12:34:17.002" starttime="20170623 12:34:16.939"></status>
+</kw>
+<kw name="Click Create New Invoice Button" library="CreateInvoice">
+<kw name="Wait Until Page Contains Element" library="Selenium2Library">
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<arguments>
+<arg>${CreateInvoiceButton}</arg>
+<arg>10</arg>
+</arguments>
+<status status="PASS" endtime="20170623 12:34:17.575" starttime="20170623 12:34:17.003"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>${CreateInvoiceButton}</arg>
+</arguments>
+<msg timestamp="20170623 12:34:17.576" level="INFO">Clicking element 'xpath= //button[@ng-click='vm.createInvoice()']'.</msg>
+<status status="PASS" endtime="20170623 12:34:17.622" starttime="20170623 12:34:17.575"></status>
+</kw>
+<status status="PASS" endtime="20170623 12:34:17.622" starttime="20170623 12:34:17.003"></status>
+</kw>
+<status status="PASS" endtime="20170623 12:34:17.622" starttime="20170623 12:34:12.369"></status>
+</kw>
+<kw name="Input invoice details w/o GL Code" library="EmployeePortalApp">
+<kw name="Input SP Invoice Number" library="CreateInvoice">
+<kw name="Generate Random String" library="String">
+<doc>Generates a string with a desired ``length`` from the given ``chars``.</doc>
+<arguments>
+<arg>8</arg>
+<arg>[NUMBERS]</arg>
+</arguments>
+<assign>
+<var>${InvoiceNumberRandom}</var>
+</assign>
+<msg timestamp="20170623 12:34:17.624" level="INFO">${InvoiceNumberRandom} = 78692476</msg>
+<status status="PASS" endtime="20170623 12:34:17.624" starttime="20170623 12:34:17.624"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>${InvoiceNumberField}</arg>
+<arg>${InvoiceNumberRandom}</arg>
+</arguments>
+<msg timestamp="20170623 12:34:17.625" level="INFO">Typing text '78692476' into text field 'xpath= //input[@ng-model='vm.invHeader.spInvoiceNumber']'</msg>
+<status status="PASS" endtime="20170623 12:34:18.461" starttime="20170623 12:34:17.625"></status>
+</kw>
+<status status="PASS" endtime="20170623 12:34:18.461" starttime="20170623 12:34:17.624"></status>
+</kw>
+<kw name="Clear GL Code" library="CreateInvoice">
+<kw name="Wait Until Page Contains Element" library="Selenium2Library">
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<arguments>
+<arg>${glcodefield}</arg>
+<arg>10</arg>
+</arguments>
+<status status="PASS" endtime="20170623 12:34:18.478" starttime="20170623 12:34:18.461"></status>
+</kw>
+<kw name="Clear Element Text" library="Selenium2Library">
+<doc>Clears the text value of text entry element identified by `locator`.</doc>
+<arguments>
+<arg>${glcodefield}</arg>
+</arguments>
+<status status="PASS" endtime="20170623 12:34:18.524" starttime="20170623 12:34:18.478"></status>
+</kw>
+<status status="PASS" endtime="20170623 12:34:18.525" starttime="20170623 12:34:18.461"></status>
+</kw>
+<kw name="Open Date Select Celandar" library="CreateInvoice">
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>${servicedatecalendarbutton}</arg>
+</arguments>
+<msg timestamp="20170623 12:34:18.526" level="INFO">Clicking element 'xpath= //i[@class='fa fa-calendar']'.</msg>
+<status status="PASS" endtime="20170623 12:34:18.690" starttime="20170623 12:34:18.526"></status>
+</kw>
+<status status="PASS" endtime="20170623 12:34:18.690" starttime="20170623 12:34:18.525"></status>
+</kw>
+<kw name="Select Todays Date" library="CreateInvoice">
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>${todaysdatebutton}</arg>
+</arguments>
+<msg timestamp="20170623 12:34:18.691" level="INFO">Clicking element 'xpath= //button[text()='Today']'.</msg>
+<status status="PASS" endtime="20170623 12:34:18.761" starttime="20170623 12:34:18.691"></status>
+</kw>
+<status status="PASS" endtime="20170623 12:34:18.761" starttime="20170623 12:34:18.690"></status>
+</kw>
+<kw name="Input Work Description" library="CreateInvoice">
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>${WorkDescriptionField}</arg>
+<arg>"Automation Test Invoice"</arg>
+</arguments>
+<msg timestamp="20170623 12:34:18.762" level="INFO">Typing text '"Automation Test Invoice"' into text field 'id=txtNote'</msg>
+<status status="PASS" endtime="20170623 12:34:19.072" starttime="20170623 12:34:18.762"></status>
+</kw>
+<status status="PASS" endtime="20170623 12:34:19.072" starttime="20170623 12:34:18.761"></status>
+</kw>
+<kw name="Select GL Routing Code" library="CreateInvoice">
+<kw name="Wait Until Element Is Visible" library="Selenium2Library">
+<doc>Waits until element specified with `locator` is visible.</doc>
+<arguments>
+<arg>${paidandinvoicedroutingcode}</arg>
+<arg>10</arg>
+</arguments>
+<status status="PASS" endtime="20170623 12:34:19.099" starttime="20170623 12:34:19.073"></status>
+</kw>
+<kw name="Click Button" library="Selenium2Library">
+<doc>Clicks a button identified by `locator`.</doc>
+<arguments>
+<arg>${PaidandInvoicedRoutingCode}</arg>
+</arguments>
+<msg timestamp="20170623 12:34:19.100" level="INFO">Clicking button 'xpath= //input[@value='N']'.</msg>
+<status status="PASS" endtime="20170623 12:34:19.148" starttime="20170623 12:34:19.100"></status>
+</kw>
+<status status="PASS" endtime="20170623 12:34:19.148" starttime="20170623 12:34:19.073"></status>
+</kw>
+<status status="PASS" endtime="20170623 12:34:19.148" starttime="20170623 12:34:17.623"></status>
+</kw>
+<kw name="Add Labor Line Item" library="EmployeePortalApp">
+<kw name="Click Add Button" library="CreateInvoice">
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>${addlineitembutton}</arg>
+</arguments>
+<msg timestamp="20170623 12:34:19.149" level="INFO">Clicking element 'xpath= //button[@ng-click='vm.addLineItem()']'.</msg>
+<status status="PASS" endtime="20170623 12:34:19.203" starttime="20170623 12:34:19.149"></status>
+</kw>
+<status status="PASS" endtime="20170623 12:34:19.204" starttime="20170623 12:34:19.149"></status>
+</kw>
+<kw name="Select Labor Line Item" library="CreateInvoice">
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>${laborlineitemselection}</arg>
+</arguments>
+<msg timestamp="20170623 12:34:19.205" level="INFO">Clicking element 'xpath =//option[@label='LABOR']'.</msg>
+<kw name="Capture Page Screenshot" library="Selenium2Library">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<msg timestamp="20170623 12:34:49.327" level="FAIL">WebDriverException: Message: unknown error: cannot get automation extension
+from unknown error: page could not be found: chrome-extension://aapnijgdinlhnhlmodcfapnahmbfebeb/_generated_background_page.html
+  (Session info: chrome=58.0.3029.110)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 6.1.7601 SP1 x86_64)
+</msg>
+<status status="FAIL" endtime="20170623 12:34:49.328" starttime="20170623 12:34:39.256"></status>
+</kw>
+<msg timestamp="20170623 12:34:49.328" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: WebDriverException: Message: unknown error: cannot get automation extension
+from unknown error: page could not be found: chrome-extension://aapnijgdinlhnhlmodcfapnahmbfebeb/_generated_background_page.html
+  (Session info: chrome=58.0.3029.110)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 6.1.7601 SP1 x86_64)
+</msg>
+<msg timestamp="20170623 12:34:49.334" level="FAIL">ValueError: Element locator 'xpath =//option[@label='LABOR']' did not match any elements.</msg>
+<status status="FAIL" endtime="20170623 12:34:49.335" starttime="20170623 12:34:19.204"></status>
+</kw>
+<status status="FAIL" endtime="20170623 12:34:49.335" starttime="20170623 12:34:19.204"></status>
+</kw>
+<status status="FAIL" endtime="20170623 12:34:49.335" starttime="20170623 12:34:19.148"></status>
+</kw>
+<tags>
+<tag>Invoice</tag>
+</tags>
+<status status="FAIL" endtime="20170623 12:34:49.336" critical="yes" starttime="20170623 12:34:05.326">ValueError: Element locator 'xpath =//option[@label='LABOR']' did not match any elements.</status>
+</test>
+<test id="s1-t4" name="User should not be able to create an invoice w/o a service date">
+<kw type="setup" name="Begin Employee Portal TEst" library="Common">
+<kw name="Open Browser" library="Selenium2Library">
+<doc>Opens a new browser instance to given URL.</doc>
+<arguments>
+<arg>about:blank</arg>
+<arg>chrome</arg>
+</arguments>
+<msg timestamp="20170623 12:34:49.374" level="INFO">Opening browser 'chrome' to base url 'about:blank'</msg>
+<status status="PASS" endtime="20170623 12:34:53.305" starttime="20170623 12:34:49.374"></status>
+</kw>
+<kw name="Set Selenium Implicit Wait" library="Selenium2Library">
+<doc>Sets Selenium 2's default implicit wait in seconds and</doc>
+<arguments>
+<arg>20</arg>
+</arguments>
+<status status="PASS" endtime="20170623 12:34:53.321" starttime="20170623 12:34:53.305"></status>
+</kw>
+<kw name="Go To" library="Selenium2Library">
+<doc>Navigates the active browser instance to the provided URL.</doc>
+<arguments>
+<arg>http://employeportalweb-dev.us-east-1.elasticbeanstalk.com/</arg>
+</arguments>
+<msg timestamp="20170623 12:34:53.322" level="INFO">Opening url 'http://employeportalweb-dev.us-east-1.elasticbeanstalk.com/'</msg>
+<status status="PASS" endtime="20170623 12:34:55.703" starttime="20170623 12:34:53.321"></status>
+</kw>
+<status status="PASS" endtime="20170623 12:34:55.703" starttime="20170623 12:34:49.373"></status>
+</kw>
+<kw name="Login" library="EmployeePortalApp">
+<kw name="Send User Name Valid" library="Login">
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>${UserNameField}</arg>
+<arg>${ValidUsername}</arg>
+</arguments>
+<msg timestamp="20170623 12:34:55.705" level="INFO">Typing text 'dmohamed' into text field 'id=username'</msg>
+<status status="PASS" endtime="20170623 12:34:56.126" starttime="20170623 12:34:55.705"></status>
+</kw>
+<status status="PASS" endtime="20170623 12:34:56.126" starttime="20170623 12:34:55.704"></status>
+</kw>
+<kw name="Send Password Valid" library="Login">
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>${PasswordField}</arg>
+<arg>${ValidPassword}</arg>
+</arguments>
+<msg timestamp="20170623 12:34:56.127" level="INFO">Typing text 'Trevola1960' into text field 'id=password'</msg>
+<status status="PASS" endtime="20170623 12:34:56.379" starttime="20170623 12:34:56.126"></status>
+</kw>
+<status status="PASS" endtime="20170623 12:34:56.379" starttime="20170623 12:34:56.126"></status>
+</kw>
+<kw name="Click Login Button" library="Login">
+<kw name="Click Button" library="Selenium2Library">
+<doc>Clicks a button identified by `locator`.</doc>
+<arguments>
+<arg>${LoginBtn}</arg>
+</arguments>
+<msg timestamp="20170623 12:34:56.381" level="INFO">Clicking button 'id=Onsubmit'.</msg>
+<status status="PASS" endtime="20170623 12:34:56.459" starttime="20170623 12:34:56.380"></status>
+</kw>
+<status status="PASS" endtime="20170623 12:34:56.460" starttime="20170623 12:34:56.380"></status>
+</kw>
+<status status="PASS" endtime="20170623 12:34:56.460" starttime="20170623 12:34:55.704"></status>
+</kw>
+<kw name="Navigate to invoice create page" library="EmployeePortalApp">
+<kw name="Click Create Invoice Link" library="SideMenu">
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>${createinvoicelink}</arg>
+</arguments>
+<msg timestamp="20170623 12:34:56.496" level="INFO">Clicking element 'xpath=//*[@id="ep-sidebar"]/div[3]/span[4]/span/a'.</msg>
+<status status="PASS" endtime="20170623 12:35:05.316" starttime="20170623 12:34:56.496"></status>
+</kw>
+<status status="PASS" endtime="20170623 12:35:05.317" starttime="20170623 12:34:56.495"></status>
+</kw>
+<kw name="Input Tracking Number for Invoice" library="CreateInvoice">
+<kw name="Wait Until Page Contains Element" library="Selenium2Library">
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<arguments>
+<arg>${TrackingNumberSearchField}</arg>
+</arguments>
+<status status="PASS" endtime="20170623 12:35:05.548" starttime="20170623 12:35:05.317"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>${TrackingNumberSearchField}</arg>
+<arg>93095528</arg>
+</arguments>
+<msg timestamp="20170623 12:35:05.549" level="INFO">Typing text '93095528' into text field 'xpath= //input[@placeholder='Tracking/SR Number']'</msg>
+<status status="PASS" endtime="20170623 12:35:05.701" starttime="20170623 12:35:05.549"></status>
+</kw>
+<status status="PASS" endtime="20170623 12:35:05.702" starttime="20170623 12:35:05.317"></status>
+</kw>
+<kw name="Click Invoice Search Button" library="CreateInvoice">
+<kw name="Wait Until Page Contains Element" library="Selenium2Library">
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<arguments>
+<arg>${InvoiceSearchButton}</arg>
+</arguments>
+<status status="PASS" endtime="20170623 12:35:05.717" starttime="20170623 12:35:05.702"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>${InvoiceSearchButton}</arg>
+</arguments>
+<msg timestamp="20170623 12:35:05.718" level="INFO">Clicking element 'xpath = //button[@ng-click='vm.fetchSr()']'.</msg>
+<status status="PASS" endtime="20170623 12:35:05.770" starttime="20170623 12:35:05.717"></status>
+</kw>
+<status status="PASS" endtime="20170623 12:35:05.771" starttime="20170623 12:35:05.702"></status>
+</kw>
+<kw name="Click Create New Invoice Button" library="CreateInvoice">
+<kw name="Wait Until Page Contains Element" library="Selenium2Library">
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<arguments>
+<arg>${CreateInvoiceButton}</arg>
+<arg>10</arg>
+</arguments>
+<status status="PASS" endtime="20170623 12:35:06.336" starttime="20170623 12:35:05.772"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>${CreateInvoiceButton}</arg>
+</arguments>
+<msg timestamp="20170623 12:35:06.337" level="INFO">Clicking element 'xpath= //button[@ng-click='vm.createInvoice()']'.</msg>
+<status status="PASS" endtime="20170623 12:35:06.388" starttime="20170623 12:35:06.336"></status>
+</kw>
+<status status="PASS" endtime="20170623 12:35:06.388" starttime="20170623 12:35:05.771"></status>
+</kw>
+<status status="PASS" endtime="20170623 12:35:06.389" starttime="20170623 12:34:56.495"></status>
+</kw>
+<kw name="Input invoice details w/o Date Selected" library="EmployeePortalApp">
+<kw name="Input SP Invoice Number" library="CreateInvoice">
+<kw name="Generate Random String" library="String">
+<doc>Generates a string with a desired ``length`` from the given ``chars``.</doc>
+<arguments>
+<arg>8</arg>
+<arg>[NUMBERS]</arg>
+</arguments>
+<assign>
+<var>${InvoiceNumberRandom}</var>
+</assign>
+<msg timestamp="20170623 12:35:06.395" level="INFO">${InvoiceNumberRandom} = 09581158</msg>
+<status status="PASS" endtime="20170623 12:35:06.395" starttime="20170623 12:35:06.394"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>${InvoiceNumberField}</arg>
+<arg>${InvoiceNumberRandom}</arg>
+</arguments>
+<msg timestamp="20170623 12:35:06.395" level="INFO">Typing text '09581158' into text field 'xpath= //input[@ng-model='vm.invHeader.spInvoiceNumber']'</msg>
+<status status="PASS" endtime="20170623 12:35:07.597" starttime="20170623 12:35:06.395"></status>
+</kw>
+<status status="PASS" endtime="20170623 12:35:07.597" starttime="20170623 12:35:06.392"></status>
+</kw>
+<kw name="Input GL Code" library="CreateInvoice">
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>3s</arg>
+</arguments>
+<msg timestamp="20170623 12:35:10.598" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" endtime="20170623 12:35:10.598" starttime="20170623 12:35:07.597"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>${GLcodeField}</arg>
+<arg>7633</arg>
+</arguments>
+<msg timestamp="20170623 12:35:10.598" level="INFO">Typing text '7633' into text field 'xpath= //*[text()=' GL Code :']//following::input[1]'</msg>
+<status status="PASS" endtime="20170623 12:35:10.740" starttime="20170623 12:35:10.598"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>3s</arg>
+</arguments>
+<msg timestamp="20170623 12:35:13.741" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" endtime="20170623 12:35:13.741" starttime="20170623 12:35:10.741"></status>
+</kw>
+<status status="PASS" endtime="20170623 12:35:13.741" starttime="20170623 12:35:07.597"></status>
+</kw>
+<kw name="Select GL Code" library="CreateInvoice">
+<kw name="Wait Until Page Contains Element" library="Selenium2Library">
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<arguments>
+<arg>${glcodeselection}</arg>
+</arguments>
+<status status="PASS" endtime="20170623 12:35:13.762" starttime="20170623 12:35:13.742"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>${GLcodeselection}</arg>
+</arguments>
+<msg timestamp="20170623 12:35:13.762" level="INFO">Clicking element 'xpath= //a[@title='Miscellaneous Gas Expense (7633)']'.</msg>
+<status status="PASS" endtime="20170623 12:35:13.819" starttime="20170623 12:35:13.762"></status>
+</kw>
+<status status="PASS" endtime="20170623 12:35:13.819" starttime="20170623 12:35:13.742"></status>
+</kw>
+<kw name="Input Work Description" library="CreateInvoice">
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>${WorkDescriptionField}</arg>
+<arg>"Automation Test Invoice"</arg>
+</arguments>
+<msg timestamp="20170623 12:35:13.822" level="INFO">Typing text '"Automation Test Invoice"' into text field 'id=txtNote'</msg>
+<status status="PASS" endtime="20170623 12:35:14.123" starttime="20170623 12:35:13.821"></status>
+</kw>
+<status status="PASS" endtime="20170623 12:35:14.123" starttime="20170623 12:35:13.819"></status>
+</kw>
+<kw name="Select GL Routing Code" library="CreateInvoice">
+<kw name="Wait Until Element Is Visible" library="Selenium2Library">
+<doc>Waits until element specified with `locator` is visible.</doc>
+<arguments>
+<arg>${paidandinvoicedroutingcode}</arg>
+<arg>10</arg>
+</arguments>
+<status status="PASS" endtime="20170623 12:35:14.152" starttime="20170623 12:35:14.124"></status>
+</kw>
+<kw name="Click Button" library="Selenium2Library">
+<doc>Clicks a button identified by `locator`.</doc>
+<arguments>
+<arg>${PaidandInvoicedRoutingCode}</arg>
+</arguments>
+<msg timestamp="20170623 12:35:14.152" level="INFO">Clicking button 'xpath= //input[@value='N']'.</msg>
+<status status="PASS" endtime="20170623 12:35:14.224" starttime="20170623 12:35:14.152"></status>
+</kw>
+<status status="PASS" endtime="20170623 12:35:14.224" starttime="20170623 12:35:14.124"></status>
+</kw>
+<status status="PASS" endtime="20170623 12:35:14.225" starttime="20170623 12:35:06.392"></status>
+</kw>
+<kw name="Add Labor Line Item" library="EmployeePortalApp">
+<kw name="Click Add Button" library="CreateInvoice">
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>${addlineitembutton}</arg>
+</arguments>
+<msg timestamp="20170623 12:35:14.226" level="INFO">Clicking element 'xpath= //button[@ng-click='vm.addLineItem()']'.</msg>
+<status status="PASS" endtime="20170623 12:35:14.274" starttime="20170623 12:35:14.226"></status>
+</kw>
+<status status="PASS" endtime="20170623 12:35:14.275" starttime="20170623 12:35:14.226"></status>
+</kw>
+<kw name="Select Labor Line Item" library="CreateInvoice">
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>${laborlineitemselection}</arg>
+</arguments>
+<msg timestamp="20170623 12:35:14.276" level="INFO">Clicking element 'xpath =//option[@label='LABOR']'.</msg>
+<status status="PASS" endtime="20170623 12:35:14.628" starttime="20170623 12:35:14.275"></status>
+</kw>
+<status status="PASS" endtime="20170623 12:35:14.628" starttime="20170623 12:35:14.275"></status>
+</kw>
+<kw name="Select Technician Labor" library="CreateInvoice">
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>${technicianlabor}</arg>
+</arguments>
+<msg timestamp="20170623 12:35:14.629" level="INFO">Clicking element 'xpath = //option[@value='TECHNICIAN LABOR']'.</msg>
+<status status="PASS" endtime="20170623 12:35:14.693" starttime="20170623 12:35:14.629"></status>
+</kw>
+<status status="PASS" endtime="20170623 12:35:14.693" starttime="20170623 12:35:14.628"></status>
+</kw>
+<kw name="Input SP Quantity" library="CreateInvoice">
+<kw name="Wait Until Page Contains Element" library="Selenium2Library">
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<arguments>
+<arg>${spquantityfield}</arg>
+</arguments>
+<status status="PASS" endtime="20170623 12:35:14.727" starttime="20170623 12:35:14.694"></status>
+</kw>
+<kw name="Clear Element Text" library="Selenium2Library">
+<doc>Clears the text value of text entry element identified by `locator`.</doc>
+<arguments>
+<arg>${spquantityfield}</arg>
+</arguments>
+<status status="PASS" endtime="20170623 12:35:14.761" starttime="20170623 12:35:14.727"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>${spquantityfield}</arg>
+<arg>1</arg>
+</arguments>
+<msg timestamp="20170623 12:35:14.762" level="INFO">Typing text '1' into text field 'xpath=//input[@name='spQuantity']'</msg>
+<status status="PASS" endtime="20170623 12:35:14.871" starttime="20170623 12:35:14.762"></status>
+</kw>
+<status status="PASS" endtime="20170623 12:35:14.872" starttime="20170623 12:35:14.693"></status>
+</kw>
+<kw name="Click Save" library="CreateInvoice">
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>${savelineitemsbutton}</arg>
+</arguments>
+<msg timestamp="20170623 12:35:14.875" level="INFO">Clicking element 'xpath =//*[@class='fa fa-check']'.</msg>
+<status status="PASS" endtime="20170623 12:35:15.017" starttime="20170623 12:35:14.874"></status>
+</kw>
+<status status="PASS" endtime="20170623 12:35:15.018" starttime="20170623 12:35:14.873"></status>
+</kw>
+<status status="PASS" endtime="20170623 12:35:15.018" starttime="20170623 12:35:14.226"></status>
+</kw>
+<kw name="Upload Attachment" library="CreateInvoice">
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5s</arg>
+</arguments>
+<msg timestamp="20170623 12:35:20.025" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" endtime="20170623 12:35:20.026" starttime="20170623 12:35:15.024"></status>
+</kw>
+<kw name="Choose File" library="Selenium2Library">
+<doc>Inputs the `file_path` into file input field found by `locator`.</doc>
+<arguments>
+<arg>${uploadattachmentbutton}</arg>
+<arg>${attachmentfile}</arg>
+</arguments>
+<status status="PASS" endtime="20170623 12:35:20.095" starttime="20170623 12:35:20.026"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>2s</arg>
+</arguments>
+<msg timestamp="20170623 12:35:22.096" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" endtime="20170623 12:35:22.096" starttime="20170623 12:35:20.095"></status>
+</kw>
+<status status="PASS" endtime="20170623 12:35:22.096" starttime="20170623 12:35:15.023"></status>
+</kw>
+<kw name="Submit Invoice" library="EmployeePortalApp">
+<kw name="Click Save Invoice" library="CreateInvoice">
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>${saveinvoicebutton}</arg>
+</arguments>
+<msg timestamp="20170623 12:35:22.097" level="INFO">Clicking element 'xpath= //button[@ng-disabled='vm.isInvoiceAuditInProgress']'.</msg>
+<status status="PASS" endtime="20170623 12:35:22.183" starttime="20170623 12:35:22.097"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>2s</arg>
+</arguments>
+<msg timestamp="20170623 12:35:24.183" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" endtime="20170623 12:35:24.184" starttime="20170623 12:35:22.183"></status>
+</kw>
+<status status="PASS" endtime="20170623 12:35:24.184" starttime="20170623 12:35:22.097"></status>
+</kw>
+<kw name="Click Submit Invoice" library="CreateInvoice">
+<kw name="Mouse Over" library="Selenium2Library">
+<doc>Simulates hovering mouse over the element specified by `locator`.</doc>
+<arguments>
+<arg>${submitinvoicebutton}</arg>
+</arguments>
+<msg timestamp="20170623 12:35:24.187" level="INFO">Simulating Mouse Over on element 'xpath= //button[@class='btn btn-primary pull-left']'</msg>
+<status status="PASS" endtime="20170623 12:35:24.253" starttime="20170623 12:35:24.186"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>2s</arg>
+</arguments>
+<msg timestamp="20170623 12:35:26.254" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" endtime="20170623 12:35:26.254" starttime="20170623 12:35:24.254"></status>
+</kw>
+<kw name="Click Button" library="Selenium2Library">
+<doc>Clicks a button identified by `locator`.</doc>
+<arguments>
+<arg>${submitinvoicebutton}</arg>
+</arguments>
+<msg timestamp="20170623 12:35:26.254" level="INFO">Clicking button 'xpath= //button[@class='btn btn-primary pull-left']'.</msg>
+<status status="PASS" endtime="20170623 12:35:26.315" starttime="20170623 12:35:26.254"></status>
 </kw>
 <kw name="Run Keyword And Return Status" library="BuiltIn">
 <doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
@@ -426,23 +1217,23 @@
 </arguments>
 <kw name="Capture Page Screenshot" library="Selenium2Library">
 <doc>Takes a screenshot of the current page and embeds it into the log.</doc>
-<msg timestamp="20170622 14:50:49.764" level="FAIL">WebDriverException: Message: unknown error: cannot get automation extension
+<msg timestamp="20170623 12:35:56.449" level="FAIL">WebDriverException: Message: unknown error: cannot get automation extension
 from unknown error: page could not be found: chrome-extension://aapnijgdinlhnhlmodcfapnahmbfebeb/_generated_background_page.html
   (Session info: chrome=58.0.3029.110)
   (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 6.1.7601 SP1 x86_64)
 </msg>
-<status status="FAIL" endtime="20170622 14:50:49.764" starttime="20170622 14:50:39.679"></status>
+<status status="FAIL" endtime="20170623 12:35:56.449" starttime="20170623 12:35:46.348"></status>
 </kw>
-<msg timestamp="20170622 14:50:49.764" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: WebDriverException: Message: unknown error: cannot get automation extension
+<msg timestamp="20170623 12:35:56.449" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: WebDriverException: Message: unknown error: cannot get automation extension
 from unknown error: page could not be found: chrome-extension://aapnijgdinlhnhlmodcfapnahmbfebeb/_generated_background_page.html
   (Session info: chrome=58.0.3029.110)
   (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 6.1.7601 SP1 x86_64)
 </msg>
-<msg timestamp="20170622 14:50:49.767" level="FAIL">Element 'xpath= //*[text()='Submit w/ Warnings']' did not appear in 10 seconds</msg>
-<status status="FAIL" endtime="20170622 14:50:49.767" starttime="20170622 14:50:19.642"></status>
+<msg timestamp="20170623 12:35:56.454" level="FAIL">Element 'xpath= //*[text()='Submit w/ Warnings']' did not appear in 10 seconds</msg>
+<status status="FAIL" endtime="20170623 12:35:56.454" starttime="20170623 12:35:26.316"></status>
 </kw>
-<msg timestamp="20170622 14:50:49.767" level="INFO">${WarningCheck} = False</msg>
-<status status="PASS" endtime="20170622 14:50:49.767" starttime="20170622 14:50:19.642"></status>
+<msg timestamp="20170623 12:35:56.454" level="INFO">${WarningCheck} = False</msg>
+<status status="PASS" endtime="20170623 12:35:56.455" starttime="20170623 12:35:26.315"></status>
 </kw>
 <kw name="Run Keyword If" library="BuiltIn">
 <doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
@@ -451,72 +1242,996 @@ from unknown error: page could not be found: chrome-extension://aapnijgdinlhnhlm
 <arg>click element</arg>
 <arg>${SubmitInvoiceW/warnings}</arg>
 </arguments>
-<status status="PASS" endtime="20170622 14:50:49.768" starttime="20170622 14:50:49.768"></status>
+<status status="PASS" endtime="20170623 12:35:56.455" starttime="20170623 12:35:56.455"></status>
 </kw>
-<status status="PASS" endtime="20170622 14:50:49.768" starttime="20170622 14:50:17.553"></status>
+<status status="PASS" endtime="20170623 12:35:56.456" starttime="20170623 12:35:24.185"></status>
 </kw>
-<status status="PASS" endtime="20170622 14:50:49.768" starttime="20170622 14:50:15.472"></status>
-</kw>
-<kw name="Check for invoice success" library="EmployeePortalApp">
-<kw name="Check invoice success alert" library="CreateInvoice">
-<kw name="Wait Until Page Contains Element" library="Selenium2Library">
-<doc>Waits until element specified with `locator` appears on current page.</doc>
-<arguments>
-<arg>${invoicecreatesuccessfulalert}</arg>
-<arg>10</arg>
-</arguments>
-<kw name="Capture Page Screenshot" library="Selenium2Library">
-<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
-<msg timestamp="20170622 14:51:19.890" level="FAIL">WebDriverException: Message: unknown error: cannot get automation extension
-from unknown error: page could not be found: chrome-extension://aapnijgdinlhnhlmodcfapnahmbfebeb/_generated_background_page.html
-  (Session info: chrome=58.0.3029.110)
-  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 6.1.7601 SP1 x86_64)
-</msg>
-<status status="FAIL" endtime="20170622 14:51:19.890" starttime="20170622 14:51:09.780"></status>
-</kw>
-<msg timestamp="20170622 14:51:19.890" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: WebDriverException: Message: unknown error: cannot get automation extension
-from unknown error: page could not be found: chrome-extension://aapnijgdinlhnhlmodcfapnahmbfebeb/_generated_background_page.html
-  (Session info: chrome=58.0.3029.110)
-  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 6.1.7601 SP1 x86_64)
-</msg>
-<msg timestamp="20170622 14:51:19.895" level="FAIL">Element 'xpath= //*[text]' did not appear in 10 seconds</msg>
-<status status="FAIL" endtime="20170622 14:51:19.896" starttime="20170622 14:50:49.769"></status>
-</kw>
-<status status="FAIL" endtime="20170622 14:51:19.896" starttime="20170622 14:50:49.769"></status>
-</kw>
-<status status="FAIL" endtime="20170622 14:51:19.896" starttime="20170622 14:50:49.768"></status>
+<status status="PASS" endtime="20170623 12:35:56.456" starttime="20170623 12:35:22.097"></status>
 </kw>
 <tags>
 <tag>Invoice</tag>
-<tag>Smoke</tag>
 </tags>
-<status status="FAIL" endtime="20170622 14:51:19.897" critical="yes" starttime="20170622 14:49:49.703">Element 'xpath= //*[text]' did not appear in 10 seconds</status>
+<status status="PASS" endtime="20170623 12:35:56.456" critical="yes" starttime="20170623 12:34:49.372"></status>
 </test>
-<status status="FAIL" endtime="20170622 14:51:19.900" starttime="20170622 14:49:49.523"></status>
-</suite>
-<statistics>
-<total>
-<stat fail="1" pass="0">Critical Tests</stat>
-<stat fail="1" pass="0">All Tests</stat>
-</total>
-<tag>
-<stat fail="1" pass="0">Invoice</stat>
-<stat fail="1" pass="0">Smoke</stat>
-</tag>
-<suite>
-<stat fail="1" id="s1" name="EmployeePortalTests" pass="0">EmployeePortalTests</stat>
-</suite>
-</statistics>
-<errors>
-<msg timestamp="20170622 14:49:49.673" level="WARN">Imported resource file 'C:\development\robot-scripts\VixxoPortals\Resources\Page Objects\EmployeePortalPageObjects\InvoiceDetail.robot' is empty.</msg>
-<msg timestamp="20170622 14:49:49.673" level="WARN">Imported resource file 'C:\development\robot-scripts\VixxoPortals\Resources\Page Objects\EmployeePortalPageObjects\RequestDetail.robot' is empty.</msg>
-<msg timestamp="20170622 14:49:49.673" level="WARN">Imported resource file 'C:\development\robot-scripts\VixxoPortals\Resources\Page Objects\EmployeePortalPageObjects\QuoteDetail.robot' is empty.</msg>
-<msg timestamp="20170622 14:50:49.764" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: WebDriverException: Message: unknown error: cannot get automation extension
+<test id="s1-t5" name="User should not be able to create an invoice w/o a GL routing code">
+<kw type="setup" name="Begin Employee Portal TEst" library="Common">
+<kw name="Open Browser" library="Selenium2Library">
+<doc>Opens a new browser instance to given URL.</doc>
+<arguments>
+<arg>about:blank</arg>
+<arg>chrome</arg>
+</arguments>
+<msg timestamp="20170623 12:35:56.461" level="INFO">Opening browser 'chrome' to base url 'about:blank'</msg>
+<status status="PASS" endtime="20170623 12:35:59.944" starttime="20170623 12:35:56.461"></status>
+</kw>
+<kw name="Set Selenium Implicit Wait" library="Selenium2Library">
+<doc>Sets Selenium 2's default implicit wait in seconds and</doc>
+<arguments>
+<arg>20</arg>
+</arguments>
+<status status="PASS" endtime="20170623 12:35:59.961" starttime="20170623 12:35:59.945"></status>
+</kw>
+<kw name="Go To" library="Selenium2Library">
+<doc>Navigates the active browser instance to the provided URL.</doc>
+<arguments>
+<arg>http://employeportalweb-dev.us-east-1.elasticbeanstalk.com/</arg>
+</arguments>
+<msg timestamp="20170623 12:35:59.962" level="INFO">Opening url 'http://employeportalweb-dev.us-east-1.elasticbeanstalk.com/'</msg>
+<status status="PASS" endtime="20170623 12:36:04.924" starttime="20170623 12:35:59.962"></status>
+</kw>
+<status status="PASS" endtime="20170623 12:36:04.924" starttime="20170623 12:35:56.460"></status>
+</kw>
+<kw name="Login" library="EmployeePortalApp">
+<kw name="Send User Name Valid" library="Login">
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>${UserNameField}</arg>
+<arg>${ValidUsername}</arg>
+</arguments>
+<msg timestamp="20170623 12:36:04.926" level="INFO">Typing text 'dmohamed' into text field 'id=username'</msg>
+<status status="PASS" endtime="20170623 12:36:05.450" starttime="20170623 12:36:04.926"></status>
+</kw>
+<status status="PASS" endtime="20170623 12:36:05.451" starttime="20170623 12:36:04.925"></status>
+</kw>
+<kw name="Send Password Valid" library="Login">
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>${PasswordField}</arg>
+<arg>${ValidPassword}</arg>
+</arguments>
+<msg timestamp="20170623 12:36:05.452" level="INFO">Typing text 'Trevola1960' into text field 'id=password'</msg>
+<status status="PASS" endtime="20170623 12:36:05.579" starttime="20170623 12:36:05.451"></status>
+</kw>
+<status status="PASS" endtime="20170623 12:36:05.580" starttime="20170623 12:36:05.451"></status>
+</kw>
+<kw name="Click Login Button" library="Login">
+<kw name="Click Button" library="Selenium2Library">
+<doc>Clicks a button identified by `locator`.</doc>
+<arguments>
+<arg>${LoginBtn}</arg>
+</arguments>
+<msg timestamp="20170623 12:36:05.580" level="INFO">Clicking button 'id=Onsubmit'.</msg>
+<status status="PASS" endtime="20170623 12:36:05.647" starttime="20170623 12:36:05.580"></status>
+</kw>
+<status status="PASS" endtime="20170623 12:36:05.647" starttime="20170623 12:36:05.580"></status>
+</kw>
+<status status="PASS" endtime="20170623 12:36:05.647" starttime="20170623 12:36:04.925"></status>
+</kw>
+<kw name="Navigate to invoice create page" library="EmployeePortalApp">
+<kw name="Click Create Invoice Link" library="SideMenu">
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>${createinvoicelink}</arg>
+</arguments>
+<msg timestamp="20170623 12:36:05.676" level="INFO">Clicking element 'xpath=//*[@id="ep-sidebar"]/div[3]/span[4]/span/a'.</msg>
+<status status="PASS" endtime="20170623 12:36:09.755" starttime="20170623 12:36:05.675"></status>
+</kw>
+<status status="PASS" endtime="20170623 12:36:09.755" starttime="20170623 12:36:05.675"></status>
+</kw>
+<kw name="Input Tracking Number for Invoice" library="CreateInvoice">
+<kw name="Wait Until Page Contains Element" library="Selenium2Library">
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<arguments>
+<arg>${TrackingNumberSearchField}</arg>
+</arguments>
+<status status="PASS" endtime="20170623 12:36:10.015" starttime="20170623 12:36:09.756"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>${TrackingNumberSearchField}</arg>
+<arg>93095528</arg>
+</arguments>
+<msg timestamp="20170623 12:36:10.016" level="INFO">Typing text '93095528' into text field 'xpath= //input[@placeholder='Tracking/SR Number']'</msg>
+<status status="PASS" endtime="20170623 12:36:10.154" starttime="20170623 12:36:10.016"></status>
+</kw>
+<status status="PASS" endtime="20170623 12:36:10.154" starttime="20170623 12:36:09.755"></status>
+</kw>
+<kw name="Click Invoice Search Button" library="CreateInvoice">
+<kw name="Wait Until Page Contains Element" library="Selenium2Library">
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<arguments>
+<arg>${InvoiceSearchButton}</arg>
+</arguments>
+<status status="PASS" endtime="20170623 12:36:10.185" starttime="20170623 12:36:10.155"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>${InvoiceSearchButton}</arg>
+</arguments>
+<msg timestamp="20170623 12:36:10.187" level="INFO">Clicking element 'xpath = //button[@ng-click='vm.fetchSr()']'.</msg>
+<status status="PASS" endtime="20170623 12:36:10.242" starttime="20170623 12:36:10.186"></status>
+</kw>
+<status status="PASS" endtime="20170623 12:36:10.242" starttime="20170623 12:36:10.155"></status>
+</kw>
+<kw name="Click Create New Invoice Button" library="CreateInvoice">
+<kw name="Wait Until Page Contains Element" library="Selenium2Library">
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<arguments>
+<arg>${CreateInvoiceButton}</arg>
+<arg>10</arg>
+</arguments>
+<status status="PASS" endtime="20170623 12:36:10.730" starttime="20170623 12:36:10.243"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>${CreateInvoiceButton}</arg>
+</arguments>
+<msg timestamp="20170623 12:36:10.730" level="INFO">Clicking element 'xpath= //button[@ng-click='vm.createInvoice()']'.</msg>
+<status status="PASS" endtime="20170623 12:36:10.780" starttime="20170623 12:36:10.730"></status>
+</kw>
+<status status="PASS" endtime="20170623 12:36:10.780" starttime="20170623 12:36:10.243"></status>
+</kw>
+<status status="PASS" endtime="20170623 12:36:10.780" starttime="20170623 12:36:05.675"></status>
+</kw>
+<kw name="Input invoice details w/o GL Routing Code" library="EmployeePortalApp">
+<kw name="Input SP Invoice Number" library="CreateInvoice">
+<kw name="Generate Random String" library="String">
+<doc>Generates a string with a desired ``length`` from the given ``chars``.</doc>
+<arguments>
+<arg>8</arg>
+<arg>[NUMBERS]</arg>
+</arguments>
+<assign>
+<var>${InvoiceNumberRandom}</var>
+</assign>
+<msg timestamp="20170623 12:36:10.782" level="INFO">${InvoiceNumberRandom} = 46126430</msg>
+<status status="PASS" endtime="20170623 12:36:10.782" starttime="20170623 12:36:10.782"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>${InvoiceNumberField}</arg>
+<arg>${InvoiceNumberRandom}</arg>
+</arguments>
+<msg timestamp="20170623 12:36:10.783" level="INFO">Typing text '46126430' into text field 'xpath= //input[@ng-model='vm.invHeader.spInvoiceNumber']'</msg>
+<kw name="Capture Page Screenshot" library="Selenium2Library">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<msg timestamp="20170623 12:36:40.867" level="FAIL">WebDriverException: Message: unknown error: cannot get automation extension
 from unknown error: page could not be found: chrome-extension://aapnijgdinlhnhlmodcfapnahmbfebeb/_generated_background_page.html
   (Session info: chrome=58.0.3029.110)
   (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 6.1.7601 SP1 x86_64)
 </msg>
-<msg timestamp="20170622 14:51:19.890" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: WebDriverException: Message: unknown error: cannot get automation extension
+<status status="FAIL" endtime="20170623 12:36:40.867" starttime="20170623 12:36:30.800"></status>
+</kw>
+<msg timestamp="20170623 12:36:40.867" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: WebDriverException: Message: unknown error: cannot get automation extension
+from unknown error: page could not be found: chrome-extension://aapnijgdinlhnhlmodcfapnahmbfebeb/_generated_background_page.html
+  (Session info: chrome=58.0.3029.110)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 6.1.7601 SP1 x86_64)
+</msg>
+<msg timestamp="20170623 12:36:40.870" level="FAIL">ValueError: Element locator 'xpath= //input[@ng-model='vm.invHeader.spInvoiceNumber']' did not match any elements.</msg>
+<status status="FAIL" endtime="20170623 12:36:40.871" starttime="20170623 12:36:10.783"></status>
+</kw>
+<status status="FAIL" endtime="20170623 12:36:40.871" starttime="20170623 12:36:10.781"></status>
+</kw>
+<status status="FAIL" endtime="20170623 12:36:40.871" starttime="20170623 12:36:10.781"></status>
+</kw>
+<tags>
+<tag>Invoice</tag>
+</tags>
+<status status="FAIL" endtime="20170623 12:36:40.872" critical="yes" starttime="20170623 12:35:56.458">ValueError: Element locator 'xpath= //input[@ng-model='vm.invHeader.spInvoiceNumber']' did not match any elements.</status>
+</test>
+<test id="s1-t6" name="User should not be able to crate an invoice w/o a invoice attachment">
+<kw type="setup" name="Begin Employee Portal TEst" library="Common">
+<kw name="Open Browser" library="Selenium2Library">
+<doc>Opens a new browser instance to given URL.</doc>
+<arguments>
+<arg>about:blank</arg>
+<arg>chrome</arg>
+</arguments>
+<msg timestamp="20170623 12:36:40.876" level="INFO">Opening browser 'chrome' to base url 'about:blank'</msg>
+<status status="PASS" endtime="20170623 12:36:44.391" starttime="20170623 12:36:40.876"></status>
+</kw>
+<kw name="Set Selenium Implicit Wait" library="Selenium2Library">
+<doc>Sets Selenium 2's default implicit wait in seconds and</doc>
+<arguments>
+<arg>20</arg>
+</arguments>
+<status status="PASS" endtime="20170623 12:36:44.421" starttime="20170623 12:36:44.391"></status>
+</kw>
+<kw name="Go To" library="Selenium2Library">
+<doc>Navigates the active browser instance to the provided URL.</doc>
+<arguments>
+<arg>http://employeportalweb-dev.us-east-1.elasticbeanstalk.com/</arg>
+</arguments>
+<msg timestamp="20170623 12:36:44.423" level="INFO">Opening url 'http://employeportalweb-dev.us-east-1.elasticbeanstalk.com/'</msg>
+<status status="PASS" endtime="20170623 12:36:46.933" starttime="20170623 12:36:44.422"></status>
+</kw>
+<status status="PASS" endtime="20170623 12:36:46.934" starttime="20170623 12:36:40.875"></status>
+</kw>
+<kw name="Login" library="EmployeePortalApp">
+<kw name="Send User Name Valid" library="Login">
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>${UserNameField}</arg>
+<arg>${ValidUsername}</arg>
+</arguments>
+<msg timestamp="20170623 12:36:46.935" level="INFO">Typing text 'dmohamed' into text field 'id=username'</msg>
+<status status="PASS" endtime="20170623 12:36:47.412" starttime="20170623 12:36:46.935"></status>
+</kw>
+<status status="PASS" endtime="20170623 12:36:47.412" starttime="20170623 12:36:46.935"></status>
+</kw>
+<kw name="Send Password Valid" library="Login">
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>${PasswordField}</arg>
+<arg>${ValidPassword}</arg>
+</arguments>
+<msg timestamp="20170623 12:36:47.414" level="INFO">Typing text 'Trevola1960' into text field 'id=password'</msg>
+<status status="PASS" endtime="20170623 12:36:47.561" starttime="20170623 12:36:47.413"></status>
+</kw>
+<status status="PASS" endtime="20170623 12:36:47.562" starttime="20170623 12:36:47.412"></status>
+</kw>
+<kw name="Click Login Button" library="Login">
+<kw name="Click Button" library="Selenium2Library">
+<doc>Clicks a button identified by `locator`.</doc>
+<arguments>
+<arg>${LoginBtn}</arg>
+</arguments>
+<msg timestamp="20170623 12:36:47.563" level="INFO">Clicking button 'id=Onsubmit'.</msg>
+<status status="PASS" endtime="20170623 12:36:47.810" starttime="20170623 12:36:47.563"></status>
+</kw>
+<status status="PASS" endtime="20170623 12:36:47.810" starttime="20170623 12:36:47.562"></status>
+</kw>
+<status status="PASS" endtime="20170623 12:36:47.810" starttime="20170623 12:36:46.934"></status>
+</kw>
+<kw name="Navigate to invoice create page" library="EmployeePortalApp">
+<kw name="Click Create Invoice Link" library="SideMenu">
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>${createinvoicelink}</arg>
+</arguments>
+<msg timestamp="20170623 12:36:47.813" level="INFO">Clicking element 'xpath=//*[@id="ep-sidebar"]/div[3]/span[4]/span/a'.</msg>
+<status status="PASS" endtime="20170623 12:36:50.207" starttime="20170623 12:36:47.812"></status>
+</kw>
+<status status="PASS" endtime="20170623 12:36:50.208" starttime="20170623 12:36:47.811"></status>
+</kw>
+<kw name="Input Tracking Number for Invoice" library="CreateInvoice">
+<kw name="Wait Until Page Contains Element" library="Selenium2Library">
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<arguments>
+<arg>${TrackingNumberSearchField}</arg>
+</arguments>
+<status status="PASS" endtime="20170623 12:36:50.529" starttime="20170623 12:36:50.209"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>${TrackingNumberSearchField}</arg>
+<arg>93095528</arg>
+</arguments>
+<msg timestamp="20170623 12:36:50.530" level="INFO">Typing text '93095528' into text field 'xpath= //input[@placeholder='Tracking/SR Number']'</msg>
+<status status="PASS" endtime="20170623 12:36:50.654" starttime="20170623 12:36:50.529"></status>
+</kw>
+<status status="PASS" endtime="20170623 12:36:50.654" starttime="20170623 12:36:50.208"></status>
+</kw>
+<kw name="Click Invoice Search Button" library="CreateInvoice">
+<kw name="Wait Until Page Contains Element" library="Selenium2Library">
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<arguments>
+<arg>${InvoiceSearchButton}</arg>
+</arguments>
+<status status="PASS" endtime="20170623 12:36:50.686" starttime="20170623 12:36:50.655"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>${InvoiceSearchButton}</arg>
+</arguments>
+<msg timestamp="20170623 12:36:50.688" level="INFO">Clicking element 'xpath = //button[@ng-click='vm.fetchSr()']'.</msg>
+<status status="PASS" endtime="20170623 12:36:50.744" starttime="20170623 12:36:50.687"></status>
+</kw>
+<status status="PASS" endtime="20170623 12:36:50.744" starttime="20170623 12:36:50.654"></status>
+</kw>
+<kw name="Click Create New Invoice Button" library="CreateInvoice">
+<kw name="Wait Until Page Contains Element" library="Selenium2Library">
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<arguments>
+<arg>${CreateInvoiceButton}</arg>
+<arg>10</arg>
+</arguments>
+<status status="PASS" endtime="20170623 12:36:51.245" starttime="20170623 12:36:50.746"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>${CreateInvoiceButton}</arg>
+</arguments>
+<msg timestamp="20170623 12:36:51.246" level="INFO">Clicking element 'xpath= //button[@ng-click='vm.createInvoice()']'.</msg>
+<status status="PASS" endtime="20170623 12:36:51.300" starttime="20170623 12:36:51.246"></status>
+</kw>
+<status status="PASS" endtime="20170623 12:36:51.301" starttime="20170623 12:36:50.745"></status>
+</kw>
+<status status="PASS" endtime="20170623 12:36:51.301" starttime="20170623 12:36:47.811"></status>
+</kw>
+<kw name="Input invoice details" library="EmployeePortalApp">
+<kw name="Input SP Invoice Number" library="CreateInvoice">
+<kw name="Generate Random String" library="String">
+<doc>Generates a string with a desired ``length`` from the given ``chars``.</doc>
+<arguments>
+<arg>8</arg>
+<arg>[NUMBERS]</arg>
+</arguments>
+<assign>
+<var>${InvoiceNumberRandom}</var>
+</assign>
+<msg timestamp="20170623 12:36:51.311" level="INFO">${InvoiceNumberRandom} = 32408084</msg>
+<status status="PASS" endtime="20170623 12:36:51.311" starttime="20170623 12:36:51.311"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>${InvoiceNumberField}</arg>
+<arg>${InvoiceNumberRandom}</arg>
+</arguments>
+<msg timestamp="20170623 12:36:51.312" level="INFO">Typing text '32408084' into text field 'xpath= //input[@ng-model='vm.invHeader.spInvoiceNumber']'</msg>
+<status status="PASS" endtime="20170623 12:36:52.142" starttime="20170623 12:36:51.311"></status>
+</kw>
+<status status="PASS" endtime="20170623 12:36:52.142" starttime="20170623 12:36:51.310"></status>
+</kw>
+<kw name="Input GL Code" library="CreateInvoice">
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>3s</arg>
+</arguments>
+<msg timestamp="20170623 12:36:55.143" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" endtime="20170623 12:36:55.143" starttime="20170623 12:36:52.143"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>${GLcodeField}</arg>
+<arg>7633</arg>
+</arguments>
+<msg timestamp="20170623 12:36:55.143" level="INFO">Typing text '7633' into text field 'xpath= //*[text()=' GL Code :']//following::input[1]'</msg>
+<status status="PASS" endtime="20170623 12:36:55.292" starttime="20170623 12:36:55.143"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>3s</arg>
+</arguments>
+<msg timestamp="20170623 12:36:58.293" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" endtime="20170623 12:36:58.293" starttime="20170623 12:36:55.293"></status>
+</kw>
+<status status="PASS" endtime="20170623 12:36:58.293" starttime="20170623 12:36:52.142"></status>
+</kw>
+<kw name="Select GL Code" library="CreateInvoice">
+<kw name="Wait Until Page Contains Element" library="Selenium2Library">
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<arguments>
+<arg>${glcodeselection}</arg>
+</arguments>
+<status status="PASS" endtime="20170623 12:36:58.321" starttime="20170623 12:36:58.294"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>${GLcodeselection}</arg>
+</arguments>
+<msg timestamp="20170623 12:36:58.322" level="INFO">Clicking element 'xpath= //a[@title='Miscellaneous Gas Expense (7633)']'.</msg>
+<status status="PASS" endtime="20170623 12:36:58.383" starttime="20170623 12:36:58.321"></status>
+</kw>
+<status status="PASS" endtime="20170623 12:36:58.383" starttime="20170623 12:36:58.294"></status>
+</kw>
+<kw name="Open Date Select Celandar" library="CreateInvoice">
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>${servicedatecalendarbutton}</arg>
+</arguments>
+<msg timestamp="20170623 12:36:58.384" level="INFO">Clicking element 'xpath= //i[@class='fa fa-calendar']'.</msg>
+<status status="PASS" endtime="20170623 12:36:58.525" starttime="20170623 12:36:58.384"></status>
+</kw>
+<status status="PASS" endtime="20170623 12:36:58.525" starttime="20170623 12:36:58.384"></status>
+</kw>
+<kw name="Select Todays Date" library="CreateInvoice">
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>${todaysdatebutton}</arg>
+</arguments>
+<msg timestamp="20170623 12:36:58.527" level="INFO">Clicking element 'xpath= //button[text()='Today']'.</msg>
+<status status="PASS" endtime="20170623 12:36:58.612" starttime="20170623 12:36:58.526"></status>
+</kw>
+<status status="PASS" endtime="20170623 12:36:58.612" starttime="20170623 12:36:58.526"></status>
+</kw>
+<kw name="Input Work Description" library="CreateInvoice">
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>${WorkDescriptionField}</arg>
+<arg>"Automation Test Invoice"</arg>
+</arguments>
+<msg timestamp="20170623 12:36:58.614" level="INFO">Typing text '"Automation Test Invoice"' into text field 'id=txtNote'</msg>
+<status status="PASS" endtime="20170623 12:36:58.859" starttime="20170623 12:36:58.613"></status>
+</kw>
+<status status="PASS" endtime="20170623 12:36:58.859" starttime="20170623 12:36:58.613"></status>
+</kw>
+<kw name="Select GL Routing Code" library="CreateInvoice">
+<kw name="Wait Until Element Is Visible" library="Selenium2Library">
+<doc>Waits until element specified with `locator` is visible.</doc>
+<arguments>
+<arg>${paidandinvoicedroutingcode}</arg>
+<arg>10</arg>
+</arguments>
+<status status="PASS" endtime="20170623 12:36:58.885" starttime="20170623 12:36:58.860"></status>
+</kw>
+<kw name="Click Button" library="Selenium2Library">
+<doc>Clicks a button identified by `locator`.</doc>
+<arguments>
+<arg>${PaidandInvoicedRoutingCode}</arg>
+</arguments>
+<msg timestamp="20170623 12:36:58.886" level="INFO">Clicking button 'xpath= //input[@value='N']'.</msg>
+<status status="PASS" endtime="20170623 12:36:58.937" starttime="20170623 12:36:58.885"></status>
+</kw>
+<status status="PASS" endtime="20170623 12:36:58.937" starttime="20170623 12:36:58.860"></status>
+</kw>
+<status status="PASS" endtime="20170623 12:36:58.937" starttime="20170623 12:36:51.309"></status>
+</kw>
+<kw name="Add Labor Line Item" library="EmployeePortalApp">
+<kw name="Click Add Button" library="CreateInvoice">
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>${addlineitembutton}</arg>
+</arguments>
+<msg timestamp="20170623 12:36:58.939" level="INFO">Clicking element 'xpath= //button[@ng-click='vm.addLineItem()']'.</msg>
+<status status="PASS" endtime="20170623 12:36:58.987" starttime="20170623 12:36:58.939"></status>
+</kw>
+<status status="PASS" endtime="20170623 12:36:58.987" starttime="20170623 12:36:58.938"></status>
+</kw>
+<kw name="Select Labor Line Item" library="CreateInvoice">
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>${laborlineitemselection}</arg>
+</arguments>
+<msg timestamp="20170623 12:36:58.988" level="INFO">Clicking element 'xpath =//option[@label='LABOR']'.</msg>
+<status status="PASS" endtime="20170623 12:36:59.499" starttime="20170623 12:36:58.988"></status>
+</kw>
+<status status="PASS" endtime="20170623 12:36:59.499" starttime="20170623 12:36:58.987"></status>
+</kw>
+<kw name="Select Technician Labor" library="CreateInvoice">
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>${technicianlabor}</arg>
+</arguments>
+<msg timestamp="20170623 12:36:59.500" level="INFO">Clicking element 'xpath = //option[@value='TECHNICIAN LABOR']'.</msg>
+<status status="PASS" endtime="20170623 12:36:59.557" starttime="20170623 12:36:59.500"></status>
+</kw>
+<status status="PASS" endtime="20170623 12:36:59.558" starttime="20170623 12:36:59.499"></status>
+</kw>
+<kw name="Input SP Quantity" library="CreateInvoice">
+<kw name="Wait Until Page Contains Element" library="Selenium2Library">
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<arguments>
+<arg>${spquantityfield}</arg>
+</arguments>
+<status status="PASS" endtime="20170623 12:36:59.591" starttime="20170623 12:36:59.559"></status>
+</kw>
+<kw name="Clear Element Text" library="Selenium2Library">
+<doc>Clears the text value of text entry element identified by `locator`.</doc>
+<arguments>
+<arg>${spquantityfield}</arg>
+</arguments>
+<status status="PASS" endtime="20170623 12:36:59.647" starttime="20170623 12:36:59.591"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>${spquantityfield}</arg>
+<arg>1</arg>
+</arguments>
+<msg timestamp="20170623 12:36:59.648" level="INFO">Typing text '1' into text field 'xpath=//input[@name='spQuantity']'</msg>
+<status status="PASS" endtime="20170623 12:36:59.765" starttime="20170623 12:36:59.647"></status>
+</kw>
+<status status="PASS" endtime="20170623 12:36:59.766" starttime="20170623 12:36:59.558"></status>
+</kw>
+<kw name="Click Save" library="CreateInvoice">
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>${savelineitemsbutton}</arg>
+</arguments>
+<msg timestamp="20170623 12:36:59.767" level="INFO">Clicking element 'xpath =//*[@class='fa fa-check']'.</msg>
+<status status="PASS" endtime="20170623 12:36:59.864" starttime="20170623 12:36:59.767"></status>
+</kw>
+<status status="PASS" endtime="20170623 12:36:59.864" starttime="20170623 12:36:59.766"></status>
+</kw>
+<status status="PASS" endtime="20170623 12:36:59.864" starttime="20170623 12:36:58.938"></status>
+</kw>
+<kw name="Submit Invoice" library="EmployeePortalApp">
+<kw name="Click Save Invoice" library="CreateInvoice">
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>${saveinvoicebutton}</arg>
+</arguments>
+<msg timestamp="20170623 12:36:59.866" level="INFO">Clicking element 'xpath= //button[@ng-disabled='vm.isInvoiceAuditInProgress']'.</msg>
+<kw name="Capture Page Screenshot" library="Selenium2Library">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<msg timestamp="20170623 12:37:10.031" level="FAIL">WebDriverException: Message: unknown error: cannot get automation extension
+from unknown error: page could not be found: chrome-extension://aapnijgdinlhnhlmodcfapnahmbfebeb/_generated_background_page.html
+  (Session info: chrome=58.0.3029.110)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 6.1.7601 SP1 x86_64)
+</msg>
+<status status="FAIL" endtime="20170623 12:37:10.031" starttime="20170623 12:36:59.934"></status>
+</kw>
+<msg timestamp="20170623 12:37:10.032" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: WebDriverException: Message: unknown error: cannot get automation extension
+from unknown error: page could not be found: chrome-extension://aapnijgdinlhnhlmodcfapnahmbfebeb/_generated_background_page.html
+  (Session info: chrome=58.0.3029.110)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 6.1.7601 SP1 x86_64)
+</msg>
+<msg timestamp="20170623 12:37:10.041" level="FAIL">ElementNotVisibleException: Message: element not visible
+  (Session info: chrome=58.0.3029.110)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 6.1.7601 SP1 x86_64)
+</msg>
+<status status="FAIL" endtime="20170623 12:37:10.041" starttime="20170623 12:36:59.866"></status>
+</kw>
+<status status="FAIL" endtime="20170623 12:37:10.042" starttime="20170623 12:36:59.865"></status>
+</kw>
+<status status="FAIL" endtime="20170623 12:37:10.042" starttime="20170623 12:36:59.865"></status>
+</kw>
+<tags>
+<tag>Invoice</tag>
+</tags>
+<status status="FAIL" endtime="20170623 12:37:10.042" critical="yes" starttime="20170623 12:36:40.874">ElementNotVisibleException: Message: element not visible
+  (Session info: chrome=58.0.3029.110)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 6.1.7601 SP1 x86_64)
+</status>
+</test>
+<test id="s1-t7" name="User should not be able to create an invoice w/o line items">
+<kw type="setup" name="Begin Employee Portal TEst" library="Common">
+<kw name="Open Browser" library="Selenium2Library">
+<doc>Opens a new browser instance to given URL.</doc>
+<arguments>
+<arg>about:blank</arg>
+<arg>chrome</arg>
+</arguments>
+<msg timestamp="20170623 12:37:10.046" level="INFO">Opening browser 'chrome' to base url 'about:blank'</msg>
+<status status="PASS" endtime="20170623 12:37:14.241" starttime="20170623 12:37:10.046"></status>
+</kw>
+<kw name="Set Selenium Implicit Wait" library="Selenium2Library">
+<doc>Sets Selenium 2's default implicit wait in seconds and</doc>
+<arguments>
+<arg>20</arg>
+</arguments>
+<status status="PASS" endtime="20170623 12:37:14.265" starttime="20170623 12:37:14.241"></status>
+</kw>
+<kw name="Go To" library="Selenium2Library">
+<doc>Navigates the active browser instance to the provided URL.</doc>
+<arguments>
+<arg>http://employeportalweb-dev.us-east-1.elasticbeanstalk.com/</arg>
+</arguments>
+<msg timestamp="20170623 12:37:14.267" level="INFO">Opening url 'http://employeportalweb-dev.us-east-1.elasticbeanstalk.com/'</msg>
+<status status="PASS" endtime="20170623 12:37:18.739" starttime="20170623 12:37:14.267"></status>
+</kw>
+<status status="PASS" endtime="20170623 12:37:18.739" starttime="20170623 12:37:10.045"></status>
+</kw>
+<kw name="Login" library="EmployeePortalApp">
+<kw name="Send User Name Valid" library="Login">
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>${UserNameField}</arg>
+<arg>${ValidUsername}</arg>
+</arguments>
+<msg timestamp="20170623 12:37:18.743" level="INFO">Typing text 'dmohamed' into text field 'id=username'</msg>
+<status status="PASS" endtime="20170623 12:37:19.389" starttime="20170623 12:37:18.742"></status>
+</kw>
+<status status="PASS" endtime="20170623 12:37:19.390" starttime="20170623 12:37:18.741"></status>
+</kw>
+<kw name="Send Password Valid" library="Login">
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>${PasswordField}</arg>
+<arg>${ValidPassword}</arg>
+</arguments>
+<msg timestamp="20170623 12:37:19.390" level="INFO">Typing text 'Trevola1960' into text field 'id=password'</msg>
+<status status="PASS" endtime="20170623 12:37:19.497" starttime="20170623 12:37:19.390"></status>
+</kw>
+<status status="PASS" endtime="20170623 12:37:19.497" starttime="20170623 12:37:19.390"></status>
+</kw>
+<kw name="Click Login Button" library="Login">
+<kw name="Click Button" library="Selenium2Library">
+<doc>Clicks a button identified by `locator`.</doc>
+<arguments>
+<arg>${LoginBtn}</arg>
+</arguments>
+<msg timestamp="20170623 12:37:19.498" level="INFO">Clicking button 'id=Onsubmit'.</msg>
+<status status="PASS" endtime="20170623 12:37:19.566" starttime="20170623 12:37:19.498"></status>
+</kw>
+<status status="PASS" endtime="20170623 12:37:19.566" starttime="20170623 12:37:19.498"></status>
+</kw>
+<status status="PASS" endtime="20170623 12:37:19.567" starttime="20170623 12:37:18.740"></status>
+</kw>
+<kw name="Navigate to invoice create page" library="EmployeePortalApp">
+<kw name="Click Create Invoice Link" library="SideMenu">
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>${createinvoicelink}</arg>
+</arguments>
+<msg timestamp="20170623 12:37:19.569" level="INFO">Clicking element 'xpath=//*[@id="ep-sidebar"]/div[3]/span[4]/span/a'.</msg>
+<status status="PASS" endtime="20170623 12:37:24.179" starttime="20170623 12:37:19.569"></status>
+</kw>
+<status status="PASS" endtime="20170623 12:37:24.179" starttime="20170623 12:37:19.568"></status>
+</kw>
+<kw name="Input Tracking Number for Invoice" library="CreateInvoice">
+<kw name="Wait Until Page Contains Element" library="Selenium2Library">
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<arguments>
+<arg>${TrackingNumberSearchField}</arg>
+</arguments>
+<status status="PASS" endtime="20170623 12:37:24.420" starttime="20170623 12:37:24.182"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>${TrackingNumberSearchField}</arg>
+<arg>93095528</arg>
+</arguments>
+<msg timestamp="20170623 12:37:24.421" level="INFO">Typing text '93095528' into text field 'xpath= //input[@placeholder='Tracking/SR Number']'</msg>
+<status status="PASS" endtime="20170623 12:37:24.549" starttime="20170623 12:37:24.420"></status>
+</kw>
+<status status="PASS" endtime="20170623 12:37:24.549" starttime="20170623 12:37:24.180"></status>
+</kw>
+<kw name="Click Invoice Search Button" library="CreateInvoice">
+<kw name="Wait Until Page Contains Element" library="Selenium2Library">
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<arguments>
+<arg>${InvoiceSearchButton}</arg>
+</arguments>
+<status status="PASS" endtime="20170623 12:37:24.566" starttime="20170623 12:37:24.550"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>${InvoiceSearchButton}</arg>
+</arguments>
+<msg timestamp="20170623 12:37:24.567" level="INFO">Clicking element 'xpath = //button[@ng-click='vm.fetchSr()']'.</msg>
+<status status="PASS" endtime="20170623 12:37:24.615" starttime="20170623 12:37:24.567"></status>
+</kw>
+<status status="PASS" endtime="20170623 12:37:24.615" starttime="20170623 12:37:24.550"></status>
+</kw>
+<kw name="Click Create New Invoice Button" library="CreateInvoice">
+<kw name="Wait Until Page Contains Element" library="Selenium2Library">
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<arguments>
+<arg>${CreateInvoiceButton}</arg>
+<arg>10</arg>
+</arguments>
+<status status="PASS" endtime="20170623 12:37:25.088" starttime="20170623 12:37:24.616"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>${CreateInvoiceButton}</arg>
+</arguments>
+<msg timestamp="20170623 12:37:25.089" level="INFO">Clicking element 'xpath= //button[@ng-click='vm.createInvoice()']'.</msg>
+<status status="PASS" endtime="20170623 12:37:25.136" starttime="20170623 12:37:25.088"></status>
+</kw>
+<status status="PASS" endtime="20170623 12:37:25.136" starttime="20170623 12:37:24.616"></status>
+</kw>
+<status status="PASS" endtime="20170623 12:37:25.137" starttime="20170623 12:37:19.567"></status>
+</kw>
+<kw name="Input invoice details" library="EmployeePortalApp">
+<kw name="Input SP Invoice Number" library="CreateInvoice">
+<kw name="Generate Random String" library="String">
+<doc>Generates a string with a desired ``length`` from the given ``chars``.</doc>
+<arguments>
+<arg>8</arg>
+<arg>[NUMBERS]</arg>
+</arguments>
+<assign>
+<var>${InvoiceNumberRandom}</var>
+</assign>
+<msg timestamp="20170623 12:37:25.139" level="INFO">${InvoiceNumberRandom} = 50249939</msg>
+<status status="PASS" endtime="20170623 12:37:25.139" starttime="20170623 12:37:25.138"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>${InvoiceNumberField}</arg>
+<arg>${InvoiceNumberRandom}</arg>
+</arguments>
+<msg timestamp="20170623 12:37:25.140" level="INFO">Typing text '50249939' into text field 'xpath= //input[@ng-model='vm.invHeader.spInvoiceNumber']'</msg>
+<status status="PASS" endtime="20170623 12:37:26.203" starttime="20170623 12:37:25.139"></status>
+</kw>
+<status status="PASS" endtime="20170623 12:37:26.203" starttime="20170623 12:37:25.138"></status>
+</kw>
+<kw name="Input GL Code" library="CreateInvoice">
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>3s</arg>
+</arguments>
+<msg timestamp="20170623 12:37:29.205" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" endtime="20170623 12:37:29.205" starttime="20170623 12:37:26.204"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>${GLcodeField}</arg>
+<arg>7633</arg>
+</arguments>
+<msg timestamp="20170623 12:37:29.206" level="INFO">Typing text '7633' into text field 'xpath= //*[text()=' GL Code :']//following::input[1]'</msg>
+<status status="PASS" endtime="20170623 12:37:29.335" starttime="20170623 12:37:29.205"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>3s</arg>
+</arguments>
+<msg timestamp="20170623 12:37:32.335" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" endtime="20170623 12:37:32.335" starttime="20170623 12:37:29.335"></status>
+</kw>
+<status status="PASS" endtime="20170623 12:37:32.336" starttime="20170623 12:37:26.204"></status>
+</kw>
+<kw name="Select GL Code" library="CreateInvoice">
+<kw name="Wait Until Page Contains Element" library="Selenium2Library">
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<arguments>
+<arg>${glcodeselection}</arg>
+</arguments>
+<status status="PASS" endtime="20170623 12:37:32.374" starttime="20170623 12:37:32.338"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>${GLcodeselection}</arg>
+</arguments>
+<msg timestamp="20170623 12:37:32.374" level="INFO">Clicking element 'xpath= //a[@title='Miscellaneous Gas Expense (7633)']'.</msg>
+<status status="PASS" endtime="20170623 12:37:32.444" starttime="20170623 12:37:32.374"></status>
+</kw>
+<status status="PASS" endtime="20170623 12:37:32.444" starttime="20170623 12:37:32.336"></status>
+</kw>
+<kw name="Open Date Select Celandar" library="CreateInvoice">
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>${servicedatecalendarbutton}</arg>
+</arguments>
+<msg timestamp="20170623 12:37:32.445" level="INFO">Clicking element 'xpath= //i[@class='fa fa-calendar']'.</msg>
+<status status="PASS" endtime="20170623 12:37:32.593" starttime="20170623 12:37:32.445"></status>
+</kw>
+<status status="PASS" endtime="20170623 12:37:32.593" starttime="20170623 12:37:32.445"></status>
+</kw>
+<kw name="Select Todays Date" library="CreateInvoice">
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>${todaysdatebutton}</arg>
+</arguments>
+<msg timestamp="20170623 12:37:32.594" level="INFO">Clicking element 'xpath= //button[text()='Today']'.</msg>
+<status status="PASS" endtime="20170623 12:37:32.700" starttime="20170623 12:37:32.594"></status>
+</kw>
+<status status="PASS" endtime="20170623 12:37:32.700" starttime="20170623 12:37:32.594"></status>
+</kw>
+<kw name="Input Work Description" library="CreateInvoice">
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>${WorkDescriptionField}</arg>
+<arg>"Automation Test Invoice"</arg>
+</arguments>
+<msg timestamp="20170623 12:37:32.701" level="INFO">Typing text '"Automation Test Invoice"' into text field 'id=txtNote'</msg>
+<status status="PASS" endtime="20170623 12:37:32.991" starttime="20170623 12:37:32.701"></status>
+</kw>
+<status status="PASS" endtime="20170623 12:37:32.991" starttime="20170623 12:37:32.700"></status>
+</kw>
+<kw name="Select GL Routing Code" library="CreateInvoice">
+<kw name="Wait Until Element Is Visible" library="Selenium2Library">
+<doc>Waits until element specified with `locator` is visible.</doc>
+<arguments>
+<arg>${paidandinvoicedroutingcode}</arg>
+<arg>10</arg>
+</arguments>
+<status status="PASS" endtime="20170623 12:37:33.016" starttime="20170623 12:37:32.992"></status>
+</kw>
+<kw name="Click Button" library="Selenium2Library">
+<doc>Clicks a button identified by `locator`.</doc>
+<arguments>
+<arg>${PaidandInvoicedRoutingCode}</arg>
+</arguments>
+<msg timestamp="20170623 12:37:33.017" level="INFO">Clicking button 'xpath= //input[@value='N']'.</msg>
+<status status="PASS" endtime="20170623 12:37:33.093" starttime="20170623 12:37:33.017"></status>
+</kw>
+<status status="PASS" endtime="20170623 12:37:33.093" starttime="20170623 12:37:32.991"></status>
+</kw>
+<status status="PASS" endtime="20170623 12:37:33.094" starttime="20170623 12:37:25.137"></status>
+</kw>
+<kw name="Upload Attachment" library="CreateInvoice">
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5s</arg>
+</arguments>
+<msg timestamp="20170623 12:37:38.097" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" endtime="20170623 12:37:38.097" starttime="20170623 12:37:33.096"></status>
+</kw>
+<kw name="Choose File" library="Selenium2Library">
+<doc>Inputs the `file_path` into file input field found by `locator`.</doc>
+<arguments>
+<arg>${uploadattachmentbutton}</arg>
+<arg>${attachmentfile}</arg>
+</arguments>
+<status status="PASS" endtime="20170623 12:37:38.213" starttime="20170623 12:37:38.097"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>2s</arg>
+</arguments>
+<msg timestamp="20170623 12:37:40.214" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" endtime="20170623 12:37:40.214" starttime="20170623 12:37:38.213"></status>
+</kw>
+<status status="PASS" endtime="20170623 12:37:40.214" starttime="20170623 12:37:33.096"></status>
+</kw>
+<kw name="Submit Invoice" library="EmployeePortalApp">
+<kw name="Click Save Invoice" library="CreateInvoice">
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>${saveinvoicebutton}</arg>
+</arguments>
+<msg timestamp="20170623 12:37:40.215" level="INFO">Clicking element 'xpath= //button[@ng-disabled='vm.isInvoiceAuditInProgress']'.</msg>
+<status status="PASS" endtime="20170623 12:37:40.280" starttime="20170623 12:37:40.215"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>2s</arg>
+</arguments>
+<msg timestamp="20170623 12:37:42.280" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" endtime="20170623 12:37:42.280" starttime="20170623 12:37:40.280"></status>
+</kw>
+<status status="PASS" endtime="20170623 12:37:42.280" starttime="20170623 12:37:40.215"></status>
+</kw>
+<kw name="Click Submit Invoice" library="CreateInvoice">
+<kw name="Mouse Over" library="Selenium2Library">
+<doc>Simulates hovering mouse over the element specified by `locator`.</doc>
+<arguments>
+<arg>${submitinvoicebutton}</arg>
+</arguments>
+<msg timestamp="20170623 12:37:42.281" level="INFO">Simulating Mouse Over on element 'xpath= //button[@class='btn btn-primary pull-left']'</msg>
+<status status="PASS" endtime="20170623 12:37:42.315" starttime="20170623 12:37:42.280"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>2s</arg>
+</arguments>
+<msg timestamp="20170623 12:37:44.316" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" endtime="20170623 12:37:44.316" starttime="20170623 12:37:42.316"></status>
+</kw>
+<kw name="Click Button" library="Selenium2Library">
+<doc>Clicks a button identified by `locator`.</doc>
+<arguments>
+<arg>${submitinvoicebutton}</arg>
+</arguments>
+<msg timestamp="20170623 12:37:44.316" level="INFO">Clicking button 'xpath= //button[@class='btn btn-primary pull-left']'.</msg>
+<status status="PASS" endtime="20170623 12:37:44.388" starttime="20170623 12:37:44.316"></status>
+</kw>
+<kw name="Run Keyword And Return Status" library="BuiltIn">
+<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
+<arguments>
+<arg>wait until page contains element</arg>
+<arg>${SubmitInvoiceW/warnings}</arg>
+<arg>10</arg>
+</arguments>
+<assign>
+<var>${WarningCheck}</var>
+</assign>
+<kw name="Wait Until Page Contains Element" library="Selenium2Library">
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<arguments>
+<arg>${SubmitInvoiceW/warnings}</arg>
+<arg>10</arg>
+</arguments>
+<status status="PASS" endtime="20170623 12:37:57.209" starttime="20170623 12:37:44.389"></status>
+</kw>
+<msg timestamp="20170623 12:37:57.209" level="INFO">${WarningCheck} = True</msg>
+<status status="PASS" endtime="20170623 12:37:57.209" starttime="20170623 12:37:44.389"></status>
+</kw>
+<kw name="Run Keyword If" library="BuiltIn">
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<arguments>
+<arg>${WarningCheck}</arg>
+<arg>click element</arg>
+<arg>${SubmitInvoiceW/warnings}</arg>
+</arguments>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>${SubmitInvoiceW/warnings}</arg>
+</arguments>
+<msg timestamp="20170623 12:37:57.211" level="INFO">Clicking element 'xpath= //*[text()='Submit w/ Warnings']'.</msg>
+<status status="PASS" endtime="20170623 12:37:57.399" starttime="20170623 12:37:57.211"></status>
+</kw>
+<status status="PASS" endtime="20170623 12:37:57.399" starttime="20170623 12:37:57.210"></status>
+</kw>
+<status status="PASS" endtime="20170623 12:37:57.400" starttime="20170623 12:37:42.280"></status>
+</kw>
+<status status="PASS" endtime="20170623 12:37:57.400" starttime="20170623 12:37:40.214"></status>
+</kw>
+<tags>
+<tag>Invoice</tag>
+</tags>
+<status status="PASS" endtime="20170623 12:37:57.401" critical="yes" starttime="20170623 12:37:10.045"></status>
+</test>
+<status status="FAIL" endtime="20170623 12:37:57.447" starttime="20170623 12:28:00.367"></status>
+</suite>
+<statistics>
+<total>
+<stat fail="4" pass="3">Critical Tests</stat>
+<stat fail="4" pass="3">All Tests</stat>
+</total>
+<tag>
+<stat fail="4" pass="3">Invoice</stat>
+<stat fail="0" pass="1">Smoke</stat>
+</tag>
+<suite>
+<stat fail="4" id="s1" name="EmployeePortalTests" pass="3">EmployeePortalTests</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20170623 12:28:00.526" level="WARN">Imported resource file 'C:\development\robot-scripts\VixxoPortals\Resources\Page Objects\EmployeePortalPageObjects\InvoiceDetail.robot' is empty.</msg>
+<msg timestamp="20170623 12:28:00.528" level="WARN">Imported resource file 'C:\development\robot-scripts\VixxoPortals\Resources\Page Objects\EmployeePortalPageObjects\RequestDetail.robot' is empty.</msg>
+<msg timestamp="20170623 12:28:00.529" level="WARN">Imported resource file 'C:\development\robot-scripts\VixxoPortals\Resources\Page Objects\EmployeePortalPageObjects\QuoteDetail.robot' is empty.</msg>
+<msg timestamp="20170623 12:34:05.313" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: WebDriverException: Message: unknown error: cannot get automation extension
+from unknown error: page could not be found: chrome-extension://aapnijgdinlhnhlmodcfapnahmbfebeb/_generated_background_page.html
+  (Session info: chrome=58.0.3029.110)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 6.1.7601 SP1 x86_64)
+</msg>
+<msg timestamp="20170623 12:34:49.328" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: WebDriverException: Message: unknown error: cannot get automation extension
+from unknown error: page could not be found: chrome-extension://aapnijgdinlhnhlmodcfapnahmbfebeb/_generated_background_page.html
+  (Session info: chrome=58.0.3029.110)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 6.1.7601 SP1 x86_64)
+</msg>
+<msg timestamp="20170623 12:35:56.449" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: WebDriverException: Message: unknown error: cannot get automation extension
+from unknown error: page could not be found: chrome-extension://aapnijgdinlhnhlmodcfapnahmbfebeb/_generated_background_page.html
+  (Session info: chrome=58.0.3029.110)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 6.1.7601 SP1 x86_64)
+</msg>
+<msg timestamp="20170623 12:36:40.867" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: WebDriverException: Message: unknown error: cannot get automation extension
+from unknown error: page could not be found: chrome-extension://aapnijgdinlhnhlmodcfapnahmbfebeb/_generated_background_page.html
+  (Session info: chrome=58.0.3029.110)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 6.1.7601 SP1 x86_64)
+</msg>
+<msg timestamp="20170623 12:37:10.032" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: WebDriverException: Message: unknown error: cannot get automation extension
 from unknown error: page could not be found: chrome-extension://aapnijgdinlhnhlmodcfapnahmbfebeb/_generated_background_page.html
   (Session info: chrome=58.0.3029.110)
   (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 6.1.7601 SP1 x86_64)

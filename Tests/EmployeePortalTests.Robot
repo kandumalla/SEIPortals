@@ -56,5 +56,61 @@ User should be able to create an invoice
     Submit Invoice
     Check for invoice success
 
+User should not be able to create an invoice w/o an invoice number
+  [Tags]   Invoice
+  Login
+  Navigate to invoice create page
+  input invoice details w/o invoice number
+  Add Labor Line Item
+  Upload Attachment
+  Submit Invoice
+ #Check for invoice success
+
+
+User should not be able to create an invoice w/o a GL code
+     [Tags]   Invoice
+    Login
+    Navigate to invoice create page
+    input invoice details w/o gl code
+    Add Labor Line Item
+    Upload Attachment
+    Submit Invoice
+    #Check for invoice success
+User should not be able to create an invoice w/o a service date
+    [Tags]   Invoice
+    Login
+    Navigate to invoice create page
+    input invoice details w/o date selected
+    Add Labor Line Item
+    Upload Attachment
+    Submit Invoice
+    #Check for invoice success
+User should not be able to create an invoice w/o a GL routing code
+    [Tags]   Invoice
+    Login
+    Navigate to invoice create page
+    input invoice details w/o gl routing code
+    Add Labor Line Item
+    Upload Attachment
+    Submit Invoice
+    #Check for invoice success
+User should not be able to crate an invoice w/o a invoice attachment
+    [Tags]   Invoice
+    Login
+    Navigate to invoice create page
+    input invoice details
+    Add Labor Line Item
+    Submit Invoice
+    #Check for invoice success
+User should not be able to create an invoice w/o line items
+    [Tags]   Invoice
+    Login
+    Navigate to invoice create page
+    input invoice details
+    Upload Attachment
+    Submit Invoice
+    #Check for invoice success
+
+
 
 #Disputes

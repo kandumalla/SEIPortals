@@ -34,7 +34,7 @@ ${AttachmentFile} =  C:/Users/dmohamed/Documents/Testing Environment/Testing Scr
 
 ${AttachmentElement} =  xpath= //span[@ng-if='attachmentReference.isStaged']
 ${InvoiceCreateSuccessfulalert} =  id=toast-container
-${InvoiceCreateSuccessfullMessage} =  xpath = //*[text()='The invoice submitted successfully'
+${InvoiceCreateSuccessfullMessage} =  xpath= //*[contains(text(),'The invoice submitted successfully')]
 ${SubmitInvoiceW/warnings} =   xpath= //*[text()='Submit w/ Warnings']
 #DataVariable
 ${TrackingNumberInvoice} =   93095528
@@ -58,6 +58,9 @@ Input GL Code
 Select GL Code
     wait until page contains element  ${glcodeselection}
     click element  ${GLcodeselection}
+Clear GL Code
+    wait until page contains element   ${glcodefield}   10
+    clear element text   ${glcodefield}
 Open Date Select Celandar
     click element  ${servicedatecalendarbutton}
 Select Todays Date
@@ -101,8 +104,33 @@ Click Submit Invoice
    run keyword if   ${WarningCheck}  click element   ${SubmitInvoiceW/warnings}
 Check invoice success alert
   wait until page contains element  ${invoicecreatesuccessfulalert}    10
-  element should be visible  ${invoicecreatesuccessfulalert}
-  wait until page contains  ${invoicecreatesuccessfullmessage}  10
+
+  wait until page contains element  ${invoicecreatesuccessfullmessage}  20
+Check missing invoice number alert
+    wait until page contains element  ${invoicecreatesuccessfulalert}    10
+    page should contain element  ${needinvoicealert}
+
+Check missing service date alert
+    wait until page contains element  ${invoicecreatesuccessfulalert}    10
+    page should contain  ${needservicedatealert}
+
+Check missing line item alert
+    wait until page contains element  ${invoicecreatesuccessfulalert}    10
+    page should contain  ${needlineitemalert}
+
+Check missing GL routing alert
+    wait until page contains element  ${invoicecreatesuccessfulalert}    10
+    page should contain  ${needGLRoutingAlert}
+
+Check missing GL code alert
+    wait until page contains element  ${invoicecreatesuccessfulalert}    10
+    page should contain  ${needGLCodeAlert}
+
+Check missing invoice attachment alert
+    wait until page contains element  ${invoicecreatesuccessfulalert}    10
+    page should contain  ${needinvoiceattachmentalert}
+
+
 
 
 
