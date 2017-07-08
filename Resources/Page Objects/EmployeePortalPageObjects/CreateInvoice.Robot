@@ -2,7 +2,7 @@
 Library  Selenium2Library
 Library  String
 *** Variables ***
-${TrackingNumberSearchField} =   xpath= //input[@placeholder='Tracking/SR Number']
+${TrackingNumberSearchField} =   xpath= //input[@placeholder='Tracking/SR Number']  #//*[@id="collapseInvoiceCreate"]/ul/li/input
 ${InvoiceSearchButton} =    xpath = //button[@ng-click='vm.fetchSr()']
 ${CreateInvoiceButton} =  xpath= //button[@ng-click='vm.createInvoice()']
 ${InvoiceNumberField} =  xpath= //input[@ng-model='vm.invHeader.spInvoiceNumber']
@@ -30,24 +30,27 @@ ${TechnicianLabor} =  xpath = //option[@value='TECHNICIAN LABOR']
 ${UploadAttachmentButton} =  xpath =//input[@type='file']
 ${SaveInvoiceButton} =   xpath= //button[@ng-disabled='vm.isInvoiceAuditInProgress']
 ${SubmitInvoiceButton} =  xpath= //button[@class='btn btn-primary pull-left']
-${AttachmentFile} =  C:/Users/dmohamed/Documents/Testing Environment/Testing Screenshots/Invoice Work Flow.PNG
+${AttachmentFile} =  C:\\Users\\lkandumalla\\Picture\\Hydrangeas.jpg
 
 ${AttachmentElement} =  xpath= //span[@ng-if='attachmentReference.isStaged']
 ${InvoiceCreateSuccessfulalert} =  id=toast-container
-${InvoiceCreateSuccessfullMessage} =  xpath= //*[contains(text(),'The invoice submitted successfully')]
+${InvoiceCreateSuccessfullMessage} =  xpath = //*[text()='The invoice submitted successfully'
 ${SubmitInvoiceW/warnings} =   xpath= //*[text()='Submit w/ Warnings']
 #DataVariable
-${TrackingNumberInvoice} =   93095528
+${TrackingNumberInvoice} =   1-2697510621   #93095528
+${delay}  10s
 *** Keywords ***
 Input Tracking Number for Invoice
     wait until page contains element  ${TrackingNumberSearchField}
     input text  ${TrackingNumberSearchField}  93095528
+    sleep  ${delay}
 Click Invoice Search Button
     wait until page contains element  ${InvoiceSearchButton}
     click element  ${InvoiceSearchButton}
 Click Create New Invoice Button
    wait until page contains element  ${CreateInvoiceButton}  10
     click element    ${CreateInvoiceButton}
+    sleep  ${delay}
 Input SP Invoice Number
     ${InvoiceNumberRandom}=  generate random string  8  [NUMBERS]
     input text   ${InvoiceNumberField}  ${InvoiceNumberRandom}
@@ -58,9 +61,6 @@ Input GL Code
 Select GL Code
     wait until page contains element  ${glcodeselection}
     click element  ${GLcodeselection}
-Clear GL Code
-    wait until page contains element   ${glcodefield}   10
-    clear element text   ${glcodefield}
 Open Date Select Celandar
     click element  ${servicedatecalendarbutton}
 Select Todays Date
@@ -104,33 +104,8 @@ Click Submit Invoice
    run keyword if   ${WarningCheck}  click element   ${SubmitInvoiceW/warnings}
 Check invoice success alert
   wait until page contains element  ${invoicecreatesuccessfulalert}    10
-
-  wait until page contains element  ${invoicecreatesuccessfullmessage}  20
-Check missing invoice number alert
-    wait until page contains element  ${invoicecreatesuccessfulalert}    10
-    page should contain element  ${needinvoicealert}
-
-Check missing service date alert
-    wait until page contains element  ${invoicecreatesuccessfulalert}    10
-    page should contain  ${needservicedatealert}
-
-Check missing line item alert
-    wait until page contains element  ${invoicecreatesuccessfulalert}    10
-    page should contain  ${needlineitemalert}
-
-Check missing GL routing alert
-    wait until page contains element  ${invoicecreatesuccessfulalert}    10
-    page should contain  ${needGLRoutingAlert}
-
-Check missing GL code alert
-    wait until page contains element  ${invoicecreatesuccessfulalert}    10
-    page should contain  ${needGLCodeAlert}
-
-Check missing invoice attachment alert
-    wait until page contains element  ${invoicecreatesuccessfulalert}    10
-    page should contain  ${needinvoiceattachmentalert}
-
-
+  element should be visible  ${invoicecreatesuccessfulalert}
+  wait until page contains  ${invoicecreatesuccessfullmessage}  10
 
 
 
