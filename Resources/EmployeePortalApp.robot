@@ -11,8 +11,9 @@ Resource  ../Resources/Page Objects/EmployeePortalPageObjects/PMBulkUpload.robot
 Resource  ../Resources/Page Objects/EmployeePortalPageObjects/Report.robot
 Resource  ../Resources/Page Objects/EmployeePortalPageObjects/ReviewByAccountTeam.robot
 Resource  ../Resources/Page Objects/EmployeePortalPageObjects/ReviewByAp.robot
-Resource  ../Resources/Page Objects/EmployeePortalPageObjects/ReviewByFSR.robot
+Resource  ../Resources/Page Objects/EmployeePortalPageObjects/ReviewByFSR.Robot
 Resource  ../Resources/Page Objects/EmployeePortalPageObjects/SideMenu.Robot
+Resource  ../Resources/Page Objects/EmployeePortalPageObjects/ProcessPage.robot
 Resource  ../Resources/Page Objects/EmployeePortalPageObjects/VisualAudit.robot
 Resource  ../Resources/Page Objects/EmployeePortalPageObjects/InvoiceDetail.robot
 Resource  ../Resources/Page Objects/EmployeePortalPageObjects/RequestDetail.robot
@@ -20,14 +21,9 @@ Resource  ../Resources/Page Objects/EmployeePortalPageObjects/QuoteDetail.robot
 Resource  ../Resources/Page Objects/EmployeePortalPageObjects/BucketSearchCriteria.Robot
 
 
-
-
-
-
-
-
 *** Variables ***
-
+${delay}  10s
+${delay1}  20s
 *** Keywords ***
 Login With Valid Employee Credentials
     Login.Send User Name Valid
@@ -114,38 +110,6 @@ Input invoice details
     Select Todays Date
     Input Work Description
     Select GL Routing Code
-Input invoice details w/o invoice number
-    #Input SP Invoice Number
-    Input GL Code
-    Select GL Code
-    Open Date Select Celandar
-    Select Todays Date
-    Input Work Description
-    Select GL Routing Code
-
-Input invoice details w/o GL Code
-    Input SP Invoice Number
-    Clear GL Code
-    Open Date Select Celandar
-    Select Todays Date
-    Input Work Description
-    Select GL Routing Code
-Input invoice details w/o Date Selected
-    Input SP Invoice Number
-    Input GL Code
-    Select GL Code
-#    Open Date Select Celandar
-#    Select Todays Date
-    Input Work Description
-    Select GL Routing Code
-Input invoice details w/o GL Routing Code
-    Input SP Invoice Number
-    Input GL Code
-    Select GL Code
-    Open Date Select Celandar
-    Select Todays Date
-    Input Work Description
-#    Select GL Routing Code
 
 Add Labor Line Item
     click add button
@@ -162,4 +126,24 @@ Submit Invoice
     Click Submit Invoice
 Check for invoice success
     Check invoice success alert
+
+Navigate to Review By FSR
+    SideMenu.Navigate to FSR Review Page
+Check ReviewByFSR Page
+    ReviewByFSR.ReviewByFSR Page Check
+Process Group Action Project Forum from ReviewByFSR
+    ProcessPage.Click Process This Invoice
+    ReviewByFSR.Select Recommended Group Action Project Forum
+    ProcessPage.Enter Invoice Note
+    ProcessPage.Click Invoice Action Save button
+Process Group Action Agree from ReviewByFSR
+    ProcessPage.Click Process This Invoice
+    ReviewByFSR.Select Recommended Group Action Agree
+    ProcessPage.Enter Invoice Note
+    ProcessPage.Click Invoice Action Save button
+Process Group Action Reject Covered By Cotract from ReviewByFSR
+    ProcessPage.Click Process This Invoice
+    ReviewByFSR.Select Recommended Group Action Reject Covered By Cotract
+    ProcessPage.Enter Invoice Note
+    ProcessPage.Click Invoice Action Save button
 
