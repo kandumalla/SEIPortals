@@ -8,8 +8,8 @@ ${LoginBtn}=     id=Onsubmit
 ${FogotPasswordLink}=    xpath= //*/div[2]/div/div/section/div/div[2]/div/a
 ${LoginErrorAlert}=  xpath= //*/div[1]/div/div[2]/div/div/section/div/div[2]/div/div/div[2]
 #Data Variables
-${ValidUsername}=   dmohamed
-${ValidPassword}=   Trevola1960
+${ValidUsername}=   lkandumalla
+${ValidPassword}=   Password1!
 ${InvalidUsername}=     InvalidUser
 ${InvalidPassword}=     InvalidPassword
 
@@ -21,10 +21,10 @@ Send User Name Valid
 Send User Name Invalid
     input text   ${UserNameField}    ${InvalidUsername}
 Send User Name Client
-    input text  ${UserNameField}    OSMITH
+    input text  ${UserNameField}    DMOHAME
 
 Send Password Client
-    input text  ${PasswordField}     test
+    input text  ${PasswordField}     PASSWORD1
 
 Send Password Valid
     input text  ${PasswordField}  ${ValidPassword}
