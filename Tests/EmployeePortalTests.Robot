@@ -49,7 +49,7 @@ User should be able to execute Location Quick Search
      sleep  ${delay}
 User should be able to create an invoice
 
-    [Tags]  Smoke   debug  Invoice  runtest
+    [Tags]  Smoke   debug  Invoice
     Login
     Navigate to invoice create page
     Input invoice details
