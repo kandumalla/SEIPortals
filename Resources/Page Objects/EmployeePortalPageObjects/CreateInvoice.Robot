@@ -105,7 +105,7 @@ Click Submit Invoice
 Check invoice success alert
   wait until page contains element  ${invoicecreatesuccessfulalert}    10
   element should be visible  ${invoicecreatesuccessfulalert}
-  wait until page contains  ${invoicecreatesuccessfullmessage}  10
+  #wait until page contains  ${invoicecreatesuccessfullmessage}  10
 
 
 
