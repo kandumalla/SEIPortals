@@ -11,32 +11,32 @@ Test Teardown  Common.End Web Test
 
 *** Test Cases ***
 Employee Portal User Should be able to log in with valid credentials
-   [Tags]  Smoke  debug runtest
+   [Tags]  Smoke  runtest
     Login With Valid Employee Credentials
     Submit Login
     Check Login Success
 Client Portal User Should be able to log in with valid credentials
 
-   [Tags]  Smoke  Client runtest
+   [Tags]  Smoke  Client  runtest
     Login With Valid Client Credentials
     Submit Login
     sleep  ${delay}
     Check Login Success
     sleep  ${delay}
 User should be able to execute Tracking Number Quick Search
-    [Tags]  Smoke  debug  runtest
+    [Tags]  Smoke  runtest
      Login
      Enter Quick Search Tracking Number
      Quick Search Tracking Number Check
      sleep  ${delay}
 User should be able to execute Service Request Quick Search
-    [Tags]  Smoke   debug  runtest
+    [Tags]  Smoke  runtest
      Login
      Enter Quick Search SR Number
      Quick Search SR Number Check
      sleep  ${delay}
 User should be able to execute VIID Quick Search
-    [Tags]  Smoke   debug  runtest
+    [Tags]  Smoke  runtest
      Login
      Enter Quick Search VIID
      Quick Search VIID Number Check
@@ -49,7 +49,7 @@ User should be able to execute Location Quick Search
      sleep  ${delay}
 User should be able to create an invoice
 
-    [Tags]  Smoke   debug  Invoice
+    [Tags]  Smoke  Invoice  runtest
     Login
     Navigate to invoice create page
     Input invoice details
@@ -62,7 +62,7 @@ User should be able to create an invoice
     Check for invoice success
 
 User should be able to execute Group Action Project Forum from Review By FSR
-    [Tags]  Smoke  debug
+    [Tags]  Smoke
     Login
     sleep  ${delay}
     Navigate to Review By FSR
@@ -71,7 +71,7 @@ User should be able to execute Group Action Project Forum from Review By FSR
     Process Group Action Project Forum from ReviewByFSR
     sleep  ${delay}
 User should be able to execute Group Action Agree from Review By FSR
-    [Tags]  Smoke   debug
+    [Tags]  Smoke  runtest
     Login
     sleep  ${delay}
     Navigate to Review By FSR
