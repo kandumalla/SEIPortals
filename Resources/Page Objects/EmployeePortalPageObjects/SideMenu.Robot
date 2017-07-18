@@ -11,7 +11,7 @@ ${VisualAuditlink} =  xpath=//*[@id="ep-sidebar"]/div[3]/span[5]/span/a
 ${PMInvoiceBulkLoadLink} =  xpath=//*[@id="ep-sidebar"]/div[3]/span[6]/span/a
 ${ReviewByAccountTeamLink} =  xpath=//*[@id="ep-sidebar"]/div[3]/span[7]/span/a
 ${ReviewByAPLink} =  xpath=//*[@id="ep-sidebar"]/div[3]/span[8]/span/a
-${ReviewByFSRLink} =  xpath=//*[@id="ep-sidebar"]/div[3]/span[9]/span/a
+${ReviewByFSRLink} =  xpath= //*[@id="ep-sidebar"]/div[3]/span[10]/span/a
 ${BillingSpecialistReviewLink} =  xpath=//*[@id="ep-sidebar"]/div[3]/span[10]/span/a
 ${UnderInvestigationAPLink} =  xpath=//*[@id="ep-sidebar"]/div[3]/span[11]/span/a
 ${UnderInvestigationProgramsLink} =  xpath=//*[@id="ep-sidebar"]/div[3]/span[12]/span/a

@@ -37,7 +37,7 @@ Select Recommended Group Action Project Forum
     double click element  ${ProjectForum}
 
 Select Recommended Group Action Agree
-    wait until page contains element  ${Agree}  10s
+    wait until page contains element  ${Agree}  20s
     double click element  ${Agree}
 
 Select Recommended Group Action Reject Covered By Cotract
