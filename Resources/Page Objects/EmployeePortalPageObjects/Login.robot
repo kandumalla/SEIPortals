@@ -9,7 +9,7 @@ ${FogotPasswordLink}=    xpath= //*/div[2]/div/div/section/div/div[2]/div/a
 ${LoginErrorAlert}=  xpath= //*/div[1]/div/div[2]/div/div/section/div/div[2]/div/div/div[2]
 #Data Variables
 ${ValidUsername}=   lkandumalla
-${ValidPassword}=   Password1!
+${ValidPassword}=   Password12!
 ${InvalidUsername}=     InvalidUser
 ${InvalidPassword}=     InvalidPassword
 
