@@ -3,7 +3,7 @@ Resource  ../Resources/Common.robot
 Resource  ../Resources/EmployeePortalApp.robot
 Resource  ../Resources/ClientPortalApp.Robot
 
-
+*****
 Test Setup   Common.Begin Employee Portal Test
 
 Test Teardown  Common.End Web Test
